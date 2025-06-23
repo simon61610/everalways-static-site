@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ever & Always｜婚禮顧問 × 證婚服務</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Caslon+Display&family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- 頁籤 -->
+    <link rel="icon" href="./images/Logo/logo_blcak.svg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/contact-us.css">
+    <link rel="stylesheet" href="./css/partner-carousel.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+
+
+<body>
+    <!-- -------------------- 導覽列 --------------------  -->
+    <nav class="main-nav">
+        <ul class="main-nav-left">
+            <li><a href="./about-us.html">About Us</a></li>
+            <li>Services
+                <ul class="sub-nav">
+                    <li><a href="./services.html">婚禮顧問</a></li>
+                    <li><a href="./services.html">求婚企劃</a></li>
+                    <li><a href="./services.html">抓週派對</a></li>
+                    <li><a href="./services.html">廠商推薦</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Emcee Team</a></li>
+        </ul>
+        <a href="./index.html"><img src="./images/Logo/logo_blcak.svg" alt="" class="nav-logo"></a>
+        <ul class="main-nav-right">    
+            <li><a href="./moments.html">Moments</a></li>
+            <li><a href="./stories-tips.html">Stories & Tips</a></li>
+            <li>Contact Us
+                <ul class="sub-nav">
+                    <li><a href="./contact-us.html">檔期詢問</a></li>
+                    <li><a href="./faq.html">常見問題</a></li>
+                </ul>
+            </li>
+        </ul>
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </nav>
+
+
+
+    <!-- -------------------- Banner --------------------  -->
+    <section class="banner">
+        <div class="wrapper">
+            <h1>聯絡我們</h1>
+        </div>
+    </section>
+
+
+    <!-- -------------------- 聯絡表單 --------------------  -->
+    <section class="contact">
+        <div class="wrapper">
+            <h2>預約表單</h2>
+
+            <form action="">
+
+                <!-- 第一排 -->
+                <div class="row first-row">
+
+                    <div class="name-block text-input">
+                        <label for="name" class="required-mark">我們怎麼稱呼您？</label>
+                        <input type="text" id="name" name="name" placeholder="輸入您的姓名" required>
+                    </div>
+                    <div class="phone-block text-input">
+                        <label for="phone" class="required-mark">聯絡電話</label>
+                        <input type="tel" id="phone" name="phone" placeholder="輸入您的電話" required>
+                    </div>
+
+                </div>
+
+                <!-- 第二排 -->
+                <div class="row second-row">
+
+                    <div class="line-block text-input">
+                        <label for="line-id">您的 LINE ID 是？</label>
+                        <input type="text" id="line-id" name="line-id" placeholder="輸入您的 LINE ID">
+                    </div>
+                    <div class="date-block date-input">
+                        <label for="date" class="required-mark">婚禮／儀式日期</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                </div>
+
+                <!-- 第三排 -->
+                <div class="row third-row">
+
+                    <div class="sevices-interest">
+                        <p class="required-mark">想了解的項目：</p>
+
+                        <p>服務項目：</p>
+                        <div class="check-box">
+                            <label><input type="checkbox" name="serives[]" value="全程婚顧"> 全程婚顧</label>
+                            <label><input type="checkbox" name="serives[]" value="西式證婚"> 西式證婚</label>
+                            <label><input type="checkbox" name="serives[]" value="迎娶文定"> 迎娶文定</label>
+                            <label><input type="checkbox" name="serives[]" value="小型婚禮"> 小型婚禮</label>
+                            <label><input type="checkbox" name="serives[]" value="求婚企劃"> 求婚企劃</label>
+                            <label><input type="checkbox" name="serives[]" value="抓週派對"> 抓週派對</label>
+                        </div>
+
+                        <p class="space">喜好風格：</p>
+                        <div class="check-box">
+                            <label><input type="checkbox" name="serives[]" value="西式婚禮"> 西式婚禮</label>
+                            <label><input type="checkbox" name="serives[]" value="中式傳統"> 中式傳統</label>
+                            <label><input type="checkbox" name="serives[]" value="戶外派對"> 戶外派對</label>
+                            <label><input type="checkbox" name="serives[]" value="奢華典雅"> 奢華典雅</label>
+                            <label><input type="checkbox" name="serives[]" value="其他"> 其他</label>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <label for="message">還有什麼想說的嗎？</label>
+                        <textarea name="message" id="message" placeholder="婚禮流程、風格偏好、費用安排…"></textarea>
+                    </div>
+
+                </div>
+
+                <!-- 送出按鈕 -->
+                <div class="form-btn-block">
+                    <button type="submit" class="form-btn">立即送出</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+
+    <!-- -------------------- Bussiness Partner 輪播 -------------------- -->
+    <section class="partner-carousel">
+        <div class="wrapper">
+            <div class="section-divider"></div>
+            <div class="par-logo">
+                <h1>Bussiness Partner<br>我們的合作夥伴</h1>
+                <div class="carousel">
+                    <div class="logo-pic">
+                        <img src="./images/carousel_logo/par-logo1.png" alt="">
+                        <img src="./images/carousel_logo/par-logo2.png" alt="">
+                        <img src="./images/carousel_logo/par-logo3.png" alt="">
+                        <img src="./images/carousel_logo/par-logo4.png" alt="">
+                        <img src="./images/carousel_logo/par-logo5.png" alt="">
+                        <img src="./images/carousel_logo/par-logo6.png" alt="">
+                        <img src="./images/carousel_logo/par-logo7.png" alt="">
+                        <img src="./images/carousel_logo/par-logo8.png" alt="">
+                        <img src="./images/carousel_logo/par-logo9.png" alt="">
+                        <img src="./images/carousel_logo/par-logo10.png" alt="">
+                        <img src="./images/carousel_logo/par-logo11.png" alt="">
+                        <img src="./images/carousel_logo/par-logo12.png" alt="">
+                    </div>
+                    <div class="logo-pic">
+                        <img src="./images/carousel_logo/par-logo1.png" alt="">
+                        <img src="./images/carousel_logo/par-logo2.png" alt="">
+                        <img src="./images/carousel_logo/par-logo3.png" alt="">
+                        <img src="./images/carousel_logo/par-logo4.png" alt="">
+                        <img src="./images/carousel_logo/par-logo5.png" alt="">
+                        <img src="./images/carousel_logo/par-logo6.png" alt="">
+                        <img src="./images/carousel_logo/par-logo7.png" alt="">
+                        <img src="./images/carousel_logo/par-logo8.png" alt="">
+                        <img src="./images/carousel_logo/par-logo9.png" alt="">
+                        <img src="./images/carousel_logo/par-logo10.png" alt="">
+                        <img src="./images/carousel_logo/par-logo11.png" alt="">
+                        <img src="./images/carousel_logo/par-logo12.png" alt="">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+        <!-- -------------------- Footer -------------------- -->
+    <footer>
+        <div class="wrapper">
+            <p>&#9426Copyrights 2025 Ever & Always 版權所有 </p>
+            <div class="text-area">
+                <h1>FOLLOW US ON INSTAGRAM</h1>
+                <h2>婚禮企劃｜求婚企劃｜婚禮主持｜婚禮顧問</h2>
+                <div class="social-icon">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="img-block">
+                <img src="./images/Logo/logo_blcak.svg" alt="" calss="footer-logo">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

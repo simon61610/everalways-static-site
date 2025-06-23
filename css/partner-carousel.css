@@ -1,0 +1,70 @@
+/* -------------------- Bussiness Partner 輪播 -------------------- */
+.partner-carousel {
+    margin-top: 120px;
+}
+
+.partner-carousel .wrapper {
+    max-width: var(--desk-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* - 水平線 - */
+.partner-carousel .section-divider {
+    height: 1px;
+    width: 100%;
+    background-color: var(--bdc-gray);
+    margin: 0 auto;
+}
+
+/* - 旋轉木馬 - */
+.partner-carousel .par-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.par-logo h1 {
+    font-size: var(--H6-size);
+    color: var(--ftc-black);
+    line-height: var(--line-height160);
+    text-align: center;
+}
+
+.carousel {
+        /* border: 1px solid blue; */
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+}
+
+.carousel .logo-pic {
+    /* border: 1px solid red; */
+    display: flex;
+
+    transform: translateX(0%);
+
+    animation: pic 30s linear infinite;
+}
+
+.carousel img {
+    width: 100px;
+    margin-right: 30px;
+    border: 1px solid #ccc;
+}
+
+@keyframes pic {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.carousel:hover .logo-pic {
+    animation-play-state: paused;
+}

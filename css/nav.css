@@ -1,0 +1,309 @@
+/* -------------------- 導覽列 -------------------- */
+.main-nav {
+    background-color: hsl(60, 100%, 99%, .7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative; /* 讓 search-icon 定位 */
+
+    height: 88px;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+/* ----- 左邊 ----- */
+.main-nav-left {
+    flex-basis: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+    gap: 72px;
+}
+
+.main-nav-left > li{
+    /* border: 1px solid red; */
+    padding: 12px 0;
+    font-size: var(--H6-size);
+    color: var(--ftc-black);
+    font-family: var(--eng-font);
+    text-align: center;
+
+    position: relative; /* 讓次標絕對定位*/
+
+    display: inline-flex; /* 讓次選單可以置中 */
+    justify-content: center;
+}
+
+.main-nav-left > li > a{
+    /* border: 1px solid red; */
+    display: block;
+    text-decoration: none;
+    color: var(--ftc-black);
+}
+
+/* --- 左邊次導覽欄 --- */
+.main-nav-left .sub-nav {
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+
+    width: 120px;
+    text-align: center;
+
+    border: 0.5px solid var(--ftc-100);
+
+    display: none;
+}
+
+.main-nav-left .sub-nav li {
+    text-align: center;
+    position: relative; /* 讓偽元素底線絕對定位用 */
+}
+
+.main-nav-left .sub-nav li a {
+    display: block;
+    /* border: 1px solid green; */
+    text-decoration: none;
+    color: var(--ftc-black);
+    font-family: "Noto Serif TC";
+    line-height: 2; /* 撐高高度 */
+    padding: 4px 0;
+
+    transition-property: all; /* fw 和 color*/
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
+}
+
+/* ----- 右邊 ----- */
+.main-nav-right {
+    /* border: 1px solid blue; */
+    flex-basis: 100%;
+    display: inline-flex;
+    justify-content: flex-start;
+    gap: 72px;
+}
+
+.main-nav-right > li{
+    padding: 12px 0;
+    font-size: var(--H6-size);
+    color: var(--ftc-black);
+    font-family: var(--eng-font);
+    text-align: center;
+
+    position: relative; /* 讓次標絕對定位*/
+
+    display: inline-flex; /* 讓次選單可以置中 */
+    justify-content: center;
+}
+
+.main-nav-right > li > a{
+    display: block;
+    text-decoration: none;
+    color: var(--ftc-black);
+}
+
+/* --- 右邊次導覽欄 --- */
+.main-nav-right .sub-nav {
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+
+    width: 120px;
+    text-align: center;
+
+    border: 0.5px solid var(--ftc-100);
+
+    display: none;
+}
+
+.main-nav-right .sub-nav li {
+    text-align: center;
+    position: relative; /* 讓偽元素底線絕對定位用 */
+}
+
+.main-nav-right .sub-nav li a {
+    display: block;
+    /* border: 1px solid green; */
+    text-decoration: none;
+    color: var(--ftc-black);
+    font-family: "Noto Serif TC";
+    line-height: 2; /* 撐高高度 */
+    padding: 4px 0;
+
+    transition-property: all; /* fw 和 color*/
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
+}
+
+/* ----- 中間 logo ----- */
+.nav-logo {
+    display: block;
+    margin: 0 72px;
+
+    scale: 1;
+
+    transition-property: scale;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+/* ----- 最右邊 search-icon ----- */
+.main-nav > i {
+    font-size: 16px;
+    color: var(--bdc-pink);
+    display: block;
+    height: 20px;
+    
+    /* 垂直置中 */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 2%;
+    margin: auto;
+}
+
+
+
+
+
+/* -------------------- 偽元素分隔線 -------------------- */
+/* --- 導覽欄 hover 底線 --- */
+/* -- 左邊 -- */
+.main-nav-left > li::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1.5px;
+    background-color: var(--bdc-pink);
+    position: absolute;
+    top: 94%;
+    left: -120%;
+
+    transition-property: left;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.main-nav-left > li:nth-child(2):after {
+    display: none;
+}
+
+.main-nav-left > li:nth-child(2n-1) { /* 把底線遮住 */
+    overflow: hidden;
+}
+
+/* -- 右邊 -- */
+.main-nav-right > li::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1.5px;
+    background-color: var(--bdc-pink);
+    position: absolute;
+    top: 94%;
+    left: -120%;
+
+    transition-property: left;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.main-nav-right > li:nth-child(3):after {
+    display: none;
+}
+
+.main-nav-right > li:nth-child(-n+2) { /* 把底線遮住 */
+    overflow: hidden;
+}
+
+
+/* --- 次導覽欄底線 --- */
+/* -- 左邊 -- */
+.main-nav-left .sub-nav li::after { /* 次標分隔線 */
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 0.5px;
+    background-color: var(--ftc-300);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.main-nav-left .sub-nav li:last-child::after {
+    display: none;
+}
+
+/* -- 右邊 -- */
+.main-nav-right .sub-nav li::after { /* 次標分隔線 */
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 0.5px;
+    background-color: var(--ftc-300);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.main-nav-right .sub-nav li:last-child::after {
+    display: none;
+}
+
+
+
+
+
+/* -------------------- hover 效果 -------------------- */
+/* --- 底線滑動 --- */
+.main-nav-left > li:hover::after {
+    left: 0;
+}
+
+.main-nav-right > li:hover::after {
+    left: 0;
+}
+
+
+/* --- 出現次導覽列 --- */
+.main-nav-left > li:hover .sub-nav {
+    display: block;
+}
+
+.main-nav-right > li:hover .sub-nav {
+    display: block;
+}
+
+
+/* --- 次導覽列顏色變色 --- */
+.sub-nav li:hover a {
+    color: var(--bdc-pink);
+    font-weight: bold;
+}
+
+
+/* --- Logo 變大 --- */
+.nav-logo:hover {
+    scale: 1.05;
+}
+
+
+/* 文字放大效果，不一定會加 */
+.main-nav > ul > li {
+    scale: 1;
+    
+    transition-property: scale;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+.main-nav > ul > li:hover {
+    scale: 1.05;
+}

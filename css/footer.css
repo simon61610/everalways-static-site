@@ -1,0 +1,67 @@
+footer{
+    margin-top: 80px;
+    background-color: var(--bdc-white);
+}
+
+footer .wrapper {
+    max-width: var(--desk-width);
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    padding: 24px;
+
+    display: flex;
+    align-items: center;
+    
+}
+
+footer .wrapper > * {
+    flex: 1;
+    /* border: 1px solid green; */
+}
+
+/* 版權 */
+footer .wrapper > p {
+    color: var(--ftc-black);
+    font-size: var(--p-size);
+}
+
+/* 文字區域 */
+footer .text-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+footer .text-area h1 {
+    font-family: var(--eng-font);
+    font-size: var(--H6-size);
+    color: var(--ftc-black);
+}
+
+footer .text-area h2 {
+    font-size: var(--p-size);
+    color: var(--ftc-black);
+}
+
+footer .social-icon {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+}
+
+footer .social-icon i {
+    font-size: var(--H3-size);
+    color: var(--bdc-pink);
+}
+
+/* Logo */
+
+footer .wrapper .img-block {
+    text-align: right;
+}
+
+footer .wrapper img {
+    display: inline-block;
+}

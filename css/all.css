@@ -1,0 +1,53 @@
+@import url(./reset.css);
+
+:root {
+    /* 基本字體與大小 */
+    font-size: 62.5%; /* 10px */
+    font-family: "Noto Serif TC";
+
+    /* 統一字距 */
+    letter-spacing: 0.05em;
+
+    /* wrapper 寬度 */
+    --desk-width: 1200px;
+
+    /* 以下是變數設定 */
+    /* 特殊字體 */
+    --eng-font: "Libre Caslon Display";
+    --chinese-font: "Inter";
+
+    /* 字體大小 */
+    --H1-size: 4.8rem;
+    --H2-size: 4rem;
+    --H3-size: 3.6rem;
+    --H4-size: 2.4rem;
+    --H5-size: 2rem;
+    --H6-size: 1.6rem;
+    --p-size: 1.4rem;
+
+    /* 行高 */
+    --line-height160: 1.6;
+    --line-height120: 1.2;
+    --line-height100: 1; 
+
+    /* 品牌顏色 */
+    --bdc-green: #A1E3BD;
+    --bdc-pink: #FAA196;
+    --bdc-white: #FFFFF8;
+    --bdc-gray: #989CA0;
+
+    /* 文字顏色 */
+    --ftc-black: #262626;
+    --ftc-700: #4F4F4F;
+    --ftc-300: #B0B0B0;
+    --ftc-100: #E7E7E7;
+    --ftc-white: #FFFFFF;
+}
+
+/* 背景圖 */
+body {
+    background-image: url(../images/all_background_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

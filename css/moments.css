@@ -1,0 +1,574 @@
+/* -------------------- Banner -------------------- */
+.banner {
+    margin-top: 88px;
+    height: 480px;
+    position: relative;
+}
+
+.banner::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-image: url(../images/moments_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    
+
+    z-index: -1;
+    filter: brightness(0.7);
+}
+
+.banner .wrapper {
+    /* border: 1px solid red; */
+    max-width: var(--desk-width);
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-text-area {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.banner-text-area h1 {
+    color: var(--bdc-white);
+    font-size: var(--H1-size);
+    font-family: var(--eng-font);
+}
+
+.banner-text-area p {
+    color: var(--bdc-white);
+    font-size: var(--H6-size);
+    line-height: var(--line-height160);
+    text-align: center;
+}
+
+.banner-text-area h2 {
+    color: var(--bdc-white);
+    font-size: var(--H5-size);
+    font-weight: bold;
+}
+
+
+
+/* -------------------- 案例 -------------------- */
+.wedding-gallery {
+    margin-top: 80px;
+}
+
+.wedding-gallery .wrapper {
+    /* border: 1px solid red; */
+    max-width: var(--desk-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+}
+
+.wedding-gallery .wrapper > div {
+    /* border: 1px solid green; */
+}
+
+/* --- gallery-header --- */
+.gallery-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.gallery-header h1 {
+    color: var(--ftc-black);
+    font-size: var(--H2-size);
+}
+
+.gallery-header h1 span {
+    font-family: var(--chinese-font);
+}
+
+.gallery-header .category-tabs {}
+
+.category-tabs ul {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+.category-tabs li {
+    font-size: var(--H4-size);
+    color: var(--ftc-300);
+    line-height: 2.8;
+}
+
+/* 示意選擇中 */
+.category-tabs .active {
+    border-bottom: 3px solid var(--bdc-pink);
+    font-weight: bold;
+    color: var(--bdc-pink);
+}
+
+/* --- gallery-grid --- */
+.gallery-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.gallery-item {
+    position: relative; /* 給 .gallery-item div 定位用 */
+    
+    /* border: 1px solid red; */
+}
+
+.gallery-item a {}
+
+.gallery-item img {
+    width: 300px;
+}
+
+.gallery-item div {
+    color: var(--bdc-white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    z-index: 2;
+
+    transition: all 0.7s; /* 文字上跳效果 */
+}
+
+.gallery-item p {}
+
+.couple-name {
+    font-size: var(--H4-size);
+}
+
+.wedding-date {
+    font-size: var(--H6-size);
+}
+
+/* - 圖片 hover 裝飾線 - */
+.h-line, .v-line{
+    display: block;
+    /* border: 1px solid yellow; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: 1; */
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden; /* 讓裝飾線條超出後被遮住 */
+
+    transition: 0.8s;
+}
+
+.h-line::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 60%;
+    background-color: var(--bdc-white);
+    position:absolute;
+    top: 20px;
+    left: -100%;
+
+    opacity: 0;
+    transition: all 0.8s;
+
+    z-index: 2;
+}
+
+.h-line::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 60%;
+    background-color: var(--bdc-white);
+    position:absolute;
+    bottom: 20px;
+    right: -100%;
+
+    opacity: 0;
+    transition: all 0.8s;
+
+    z-index: 2;
+}
+
+.v-line::before {
+    content: "";
+    display: block;
+    height: 40%;
+    width: 1px;
+    background-color: var(--bdc-white);
+    position:absolute;
+    bottom: -100%;
+    right: 20px;
+
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.v-line::after {
+    content: "";
+    display: block;
+    height: 40%;
+    width: 1px;
+    background-color: var(--bdc-white);
+    position:absolute;
+    top: -100%;
+    left: 20px;
+    
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+/* --- hover 效果 --- */
+.gallery-item a:hover div {
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    
+    transform: translateY(50%);
+}
+
+.gallery-item a:hover .h-line::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 60%;
+    background-color: var(--bdc-white);
+    position:absolute;
+    top: 20px;
+    left: 10px;
+
+    opacity: 1;
+}
+
+.gallery-item a:hover .h-line::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 60%;
+    background-color: var(--bdc-white);
+    position:absolute;
+    bottom: 20px;
+    right: 10px;
+
+    opacity: 1;
+}
+
+.gallery-item a:hover .v-line::before {
+    content: "";
+    display: block;
+    height: 40%;
+    width: 1px;
+    background-color: var(--bdc-white);
+    position:absolute;
+    bottom: 10px;
+    right: 20px;
+
+    opacity: 1;
+}
+
+.gallery-item a:hover .v-line::after {
+    content: "";
+    display: block;
+    height: 40%;
+    width: 1px;
+    background-color: var(--bdc-white);
+    position:absolute;
+    top: 10px;
+    left: 20px;
+
+    opacity: 1;
+}
+
+.gallery-item a:hover .v-line {
+    backdrop-filter: brightness(.7);
+}
+
+/* --- gallery-controls --- */
+.gallery-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    gap: 60px;
+}
+
+.controls-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.arrow-left, .arrow-right {
+    font-size: 28px;
+}
+
+.arrow-left {
+    color: var(--ftc-300);
+}
+
+.arrow-right {
+    color: var(--ftc-300);
+}
+
+.dots-area {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.dot {
+    color: var(--ftc-300);
+}
+
+.controls-area .active {
+    color: var(--bdc-pink);
+}
+
+.gallery-controls a {
+    display: block;
+    text-decoration: none;
+    font-size: var(--H6-size);
+    color: var(--bdc-white);
+    font-family: var(--chinese-font);
+    padding: 16px 28px;
+    background-color: var(--bdc-green);
+    border-radius: 999px;
+}
+
+
+
+/* -------------------- 新人回饋 -------------------- */
+.feedback {
+    margin-top: 120px;
+}
+
+.feedback .wrapper {
+    max-width: var(--desk-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+/* --- 標題文字 --- */
+.feedback-header {
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+/* 標題 */
+.header-text {
+    margin-bottom: 48px;
+}
+
+.header-text h2 {
+    color: var(--ftc-700);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.header-text h1 {
+    color: var(--ftc-700);
+    font-size: var(--H1-size);
+    font-family: var(--chinese-font);
+    margin-bottom: 32px;
+    display: inline-block;
+
+    position: relative;
+}
+
+.header-text h1 .fa-comment {
+    font-size: var(--H1-size);
+    color: var(--bdc-green);
+    position: absolute;
+    top: -12px;
+    right: -60px;
+}
+
+.header-text p {
+    color: var(--ftc-700);
+    font-size: var(--H4-size);
+}
+
+/* 對話框動畫效果 */
+.fa-comment {
+    transform: rotate(0deg) translateY(0);
+
+    animation: talk 3s linear infinite;
+}
+
+@keyframes talk {
+    0% {
+        transform: rotate(0deg) translateY(0px);
+    }
+
+    10% {
+        transform: rotate(6deg) translateY(-20%);
+    }
+
+    20% {
+        transform: rotate(-6deg) translateY(-30%);
+    }
+
+    30%{
+        transform: rotate(0deg) translateY(-20%);
+    }
+
+    50% {
+        transform: rotate(0deg) translateY(-10%);
+    }
+
+    65% {
+        transform: rotate(0deg) translateY(0%);
+    }
+
+    100% {
+        transform: rotate(0deg) translateY(0px);
+    }
+    
+}
+
+
+
+/* 數據 */
+.feedback-stats {
+    display: flex;
+    gap: 40px;
+}
+
+.feedback-items {}
+
+.feedback-items .number {
+    margin-bottom: 20px;
+    font-size: var(--H1-size);
+    font-weight: bold;
+    background: linear-gradient(90deg, var(--bdc-green) 25%, var(--bdc-pink) 95%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.feedback-items .item {
+    font-family: var(--eng-font);
+    color: var(--ftc-700);
+    font-size: var(--H4-size);
+}
+
+
+/* --- 卡片區 --- */
+
+.feedback-cards {
+    width: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.card {
+    /* border: 1px solid blue; */
+    flex-basis: calc(25%);
+    background-color: var(--bdc-white);
+    border-radius: 8px;
+    box-shadow: 0 0 14px hsl(0, 0%, 0%, 13%);
+    padding: 20px;
+
+/*     display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    align-self: flex-start;
+}
+
+/* 卡片內容 */
+.card-content {
+    margin-bottom: 24px;
+}
+
+.card-title {
+    margin-bottom: 24px;
+}
+
+.card-name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    align-items: center;
+}
+
+.card-name p {
+    font-family: var(--chinese-font);
+    font-size: var(--p-size);
+    color: var(--ftc-black);
+}
+
+.card-name .heart-rating {}
+
+.card-name .heart-rating img {}
+
+.card-tags {
+    display: flex;
+    gap: 8px;
+}
+
+.card-tags p {
+    padding: 4px 12px;
+    background-color: var(--ftc-100);
+    border-radius: 999px;
+    font-family: var(--chinese-font);
+    font-size: var(14px);
+    color: var(--ftc-700);
+}
+
+.card-content > p {
+    color: var(--ftc-700);
+    font-size: var(--p-size);
+    line-height: var(--line-height160);
+}
+
+/* 日期和地點 */
+.date-place {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-place p {
+    color: var(--ftc-300);
+    font-size: var(--p-size);
+}
+
+
+
+
+
+
+

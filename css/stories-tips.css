@@ -1,0 +1,571 @@
+/* -------------------- 標題 -------------------- */
+.wrapper-title {
+    max-width: var(--desk-width);
+    margin: 140px auto 32px;
+    /* border: 1px solid #000; */
+}
+
+.wrapper-title div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.wrapper-title div h1 {
+    font-size: var(--H2-size);
+    color: var(--ftc-black);
+    font-family: var(--chinese-font);
+}
+
+/* -------------------- 超大 Wrapper -------------------- */
+.wrapper-grid {
+    /* outline: 1px red solid; */
+    max-width: var(--desk-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.left-side {
+    /* outline: 1px solid blue; */
+    grid-column: 1 / 3;
+}
+
+.right-side {
+    /* outline: 1px solid yellow; */
+    grid-column: 3 / 4;
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+/* -------------------- 左邊 -------------------- */
+/* -------------------- 上方主要文章 -------------------- */
+main {
+    /* border: 1px solid green; */
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+main img {
+    display: block;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.main-text-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-text-area .date {
+    color: var(--bdc-gray);
+    font-size: var(--p-size);
+    margin-bottom: 16px;
+}
+
+.main-text-area h2 {
+    font-family: var(--chinese-font);
+    font-size: var(--H2-size);
+    font-weight: bold;
+    color: var(--ftc-black);
+    line-height: var(--line-height120);
+    margin-bottom: 12px;
+}
+
+.main-text-area h3 {
+    line-height: var(--line-height120);
+    color: var(--ftc-black);
+    font-size: var(--H5-size);
+    margin-bottom: 24px;
+}
+
+.main-text-area .editor {
+    margin-bottom: 24px;
+}
+
+.main-text-area .editor p {
+    display: inline-block;
+    margin: 0 6px;
+    font-size: var(--p-size);
+    color: var(--ftc-700);
+}
+
+.main-text-area .content {
+    font-size: var(--H6-size);
+    color: var(--ftc-700);
+    line-height: var(--line-height160);
+    margin-bottom: 24px;
+}
+
+.main-text-area a {
+    display: block;
+    text-decoration: none;
+    font-size: var(--H6-size);
+    color: var(--bdc-white);
+    padding: 8px 24px;
+    background-color: var(--bdc-green);
+    /* align-self: center; */
+}
+
+/* -------------------- 下方文章列表 -------------------- */
+.article-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+
+    margin-bottom: 44px;
+
+    position: relative;
+}
+
+.article-list::before { /* 底部水平分隔線 */
+    content: "";
+    display: block;
+    width: 92%;
+    height: 1px;
+    background-color: var(--bdc-gray);
+    position: absolute;
+    top: 102%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.article-list h1 {
+    font-weight: bold;
+    color: var(--ftc-700);
+    font-size: var(--H5-size);
+    text-align: center;
+    width: 100%;
+    position: relative; /* 給底線定位用 */
+}
+
+.article-list h1::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: var(--ftc-300);
+
+    position: absolute;
+    top: 180%;
+    left: 0;
+}
+
+/* -- 文章 card -- */
+
+.article-card {
+    /* outline: 1px solid orange; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+article {
+    /* border: 1px solid blue; */
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+    text-align: center;
+    padding: 30px;
+}
+
+article .article-card-img {
+    width: 300px;
+    height: 200px;
+
+    position: relative;
+
+    margin: 0 auto 12px;
+}
+
+article .article-card-img h2 {
+    position: absolute;
+    bottom:20px;
+    left: 0;
+
+    padding: 0 20px;
+
+    font-family: var(--chinese-font);
+    font-size: var(--H6-size);
+    line-height: var(--line-height160);
+    font-weight: bold;
+    color: var(--bdc-white);
+
+    text-align: left;
+}
+
+article .date {
+    font-size: var(--p-size);
+    color: var(--bdc-gray);
+
+    margin-bottom: 12px;
+}
+
+article h3 {
+    color: var(--ftc-black);
+    line-height: var(--line-height120);
+    font-size: var(--p-size);
+
+    margin-bottom: 16px;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+article .editor {
+    margin-bottom: 16px;
+}
+
+article .editor p {
+    display: inline-block;
+    margin: 0 6px;
+    font-size: var(--p-size);
+    color: var(--ftc-700);
+}
+
+article .content {
+    font-size: var(--p-size);
+    line-height: var(--line-height160);
+    color: var(--ftc-700);
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+
+    margin-bottom: 20px;
+}
+
+article a {
+    display: block;
+    text-decoration: none;
+    font-size: var(--H6-size);
+    background-color: var(--bdc-green);
+    color: var(--bdc-white);
+    padding: 8px;
+}
+
+/* 圖片 */
+.article-card .pic1 {
+    background-image: url(../images/stories-tips_article_pic1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.article-card .pic1::before {
+    content:"";
+    display: block;
+    height: 100%;
+    backdrop-filter: brightness(0.8);
+}
+
+.article-card .pic2 {
+    background-image: url(../images/stories-tips_article_pic2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.article-card .pic2::before {
+    content:"";
+    display: block;
+    height: 100%;
+    backdrop-filter: brightness(0.8);
+}
+
+.article-card .pic3 {
+    background-image: url(../images/stories-tips_article_pic3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.article-card .pic3::before {
+    content:"";
+    display: block;
+    height: 100%;
+    backdrop-filter: brightness(0.7);
+}
+
+.article-card .pic4 {
+    background-image: url(../images/stories-tips_article_pic4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.article-card .pic4::before {
+    content:"";
+    display: block;
+    height: 100%;
+    backdrop-filter: brightness(0.8);
+}
+
+
+/* -------------------- 分頁按鈕 -------------------- */
+.pages-click {
+    /* border: 1px solid red; */
+}
+
+.pages {
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.pages p {
+    /* border: 1px solid #000; */
+    
+    border-radius: 999px;
+    width: 32px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+
+    font-family: var(--chinese-font);
+    font-size: var(--H5-size);
+    color: var(--ftc-700);
+}
+
+.pages .active {
+    background-color: var(--bdc-pink);
+    color: var(--bdc-white);
+}
+
+
+/* -------------------- 右邊 -------------------- */
+/* --------- 訂閱電子報 --------- */
+.subscribe-box {
+    margin: 20px 0 40px;
+
+    order: 1;
+}
+
+.subscribe-box > p {
+    color: var(--ftc-black);
+    font-size: var(--H6-size);
+    margin-bottom: 12px;    
+}
+
+.fa-lightbulb {
+    color: var(--bdc-pink);
+    font-size: var(--H6-size);
+    margin-right: 4px;
+}
+
+.subscribe-box > form {}
+
+.subscribe-box > form input {
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    font-family: "Noto Serif TC";
+
+    color: var(--ftc-black);
+    margin-right: 12px;
+
+    box-shadow: 0 0 14px hsl(0, 0%, 0%, .13);
+}
+
+.subscribe-box > form input::placeholder {
+    color: var(--ftc-300)
+}
+
+.subscribe-box > form input:focus {
+    outline: 1px solid var(--bdc-green);
+    
+}
+
+.subscribe-box > form button {
+    padding: 16px 28px;
+    font-size: var(--p-size);
+    font-family: "Noto Serif TC";
+
+    background-color: var(--bdc-green);
+
+    box-shadow: 0 0 14px hsl(0, 0%, 0%, .13);
+
+    color: var(--bdc-white);
+    
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: .5s all;
+}
+
+.subscribe-box > form button:hover {
+    background-color: hsl(145, 54%, 70%);
+}
+
+
+/* --------- 文章分類 --------- */
+.category-aside {
+    /* border: 1px solid red; */
+    padding: 36px;
+    background-color: var(--bdc-white);
+    box-shadow: 0 0 14px hsl(0, 0%, 0%, .13);
+
+    margin-bottom: 40px;
+
+    order: 3;
+
+    position: sticky;
+    top: 120px;
+    left: 0;
+}
+
+.category-aside h1 {
+    font-size: var(--H4-size);
+    font-family: var(--chinese-font);
+    color: var(--ftc-black);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.category-aside details {}
+
+.category-aside summary {
+    font-size: var(--H5-size);
+    font-family: var(--chinese-font);
+    color: hsl(146, 40%, 76%);
+    font-weight: bold;
+
+    margin: 16px 0 8px;
+
+    list-style: none;
+
+    position: relative;
+
+    cursor: pointer;
+
+    /* border: 1px solid #000; */
+    padding-left: 30px;
+}
+
+.category-aside summary::before {
+    content: "";
+    display: block;
+    height: 6px;
+    width: 6px;
+    border-top: 2px solid var(--bdc-green);
+    border-right: 2px solid var(--bdc-green);
+    position: absolute;
+    top: 50%;
+    left: 8px;
+
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.category-aside details[open] summary::before {
+    content: "";
+    display: block;
+    height: 6px;
+    width: 6px;
+    border-top: 2px solid var(--bdc-green);
+    border-right: 2px solid var(--bdc-green);
+    position: absolute;
+    top: 50%;
+    left: 8px;
+
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.category-aside ul {
+    list-style: disc;
+    color: var(--ftc-700);
+    font-size: var(--H6-size);
+    line-height: var(--line-height160);
+    /* border: 1px solid #000; */
+
+    margin-left: 60px;
+}
+
+.category-aside li {
+    cursor: pointer;
+
+    transition: all .8s;
+}
+
+.category-aside li:hover {
+    color: var(--bdc-pink);
+}
+
+
+
+
+
+
+/* --------- 熱門必讀 --------- */
+.popular-posts {
+    order: 2;
+
+    margin-bottom: 40px;
+}
+
+.popular-posts h1 {
+    font-size: var(--H4-size);
+    font-weight: bold;
+    color: var(--ftc-black);
+    margin-bottom: 20px;
+}
+
+.popular-posts ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.popular-posts li {}
+
+.popular-posts a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 20px;
+}
+
+.popular-posts img {
+    display: block;
+    width: 60px;
+}
+
+.popular-posts p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+
+    color: var(--ftc-700);
+    font-size: var(--H6-size);
+    line-height: var(--line-height160);
+}
+
+
+
+
+
+/* --------- 婚禮小工具 --------- */
+/* 待新增 */
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+.btn {
+    /* border: 1px solid red; */
+    padding: 12px 24px 12px 60px; /* 左邊留多一點 padding */
+    text-decoration: none;
+    color: black;
+
+    display: inline-block;
+
+    position: relative;
+
+    transition: padding .3s;
+}
+
+/* before 箭頭 */
+.btn::before {
+    content: "";
+    display: block;
+
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    transform: translateY(-50%) rotate(45deg) ; /* 置中 */
+    
+    position: absolute;
+    top: 50%;
+    left: 18px; /* 定位箭頭 */
+
+    z-index: 2;
+
+    transition: all .3s;
+}
+
+/* after 背景 */
+.btn::after {
+    content: "";
+    display: block;
+
+    width: 52px;
+    height: 52px;
+    background-color: gray;
+    border-radius: 999px;
+
+    left: 0;
+
+    transform: translateY(-50%);
+    
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+
+    transition: all .5s;
+}
+
+span {
+    position: relative;
+    z-index: 3;
+
+    transition: all .5s;
+}
+
+/* hover */
+
+.btn:hover {
+    padding: 12px 24px 12px 52px;
+}
+
+.btn:hover::before {
+    left: 28px;
+}
+
+.btn:hover::after {
+    /* right: 0; */
+    width: 100%;
+}
+
+.btn:hover span {
+    color: white;
+}

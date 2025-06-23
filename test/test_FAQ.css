@@ -1,0 +1,26 @@
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  padding: 12px 0;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+}
+
+.faq-item[open] summary::after {
+  content: "▲";
+  position: absolute;
+  right: 0;
+}
+.faq-item summary::after {
+  content: "▼";
+  position: absolute;
+  right: 0;
+}
+
+.faq-item p {
+  margin-top: 8px;
+  transition: all 0.3s ease;
+}

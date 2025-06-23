@@ -1,0 +1,792 @@
+/* -------------------- KV -------------------- */
+.banner {
+    /* border: 1px solid red; */
+    height: 300px;
+    background-image: url(../images/index_KV.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+
+    margin-top: 88px;
+}
+
+.banner-text-bg {
+    /* border: 1px solid red; */
+    width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 36px;
+
+    background-color: hsla(0, 0%, 0%, .3);
+
+    position: relative; /* 讓偽元素定位 */
+
+    backdrop-filter: blur(4px);
+}
+
+.banner-text-bg::after {
+    content: "";
+    display: block;
+    background-color: var(--bdc-white);
+    width: 60%;
+    height: 1px;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.banner-text-bg > p {
+    /* border: 1px solid green; */
+    color: var(--bdc-white);
+}
+
+.banner-text-bg > p:first-child {
+    font-size: var(--H3-size);
+    font-family: var(--eng-font);
+}
+
+.banner-text-bg > p:last-child {
+    font-size: var(--H4-size);
+}
+
+
+
+
+/* -------------------- Main -------------------- */
+
+/* --- 標題 --- */
+main > h1 {
+    /* border: 1px solid red; */
+    font-family: var(--eng-font);
+    font-size: var(--H3-size);
+    color: var(--ftc-black);
+    text-align: center;
+    margin: 80px 0;
+}
+
+main > h1 > span {
+    font-family: var(--chinese-font);
+}
+
+/* --- pic + 文字敘述區域 --- */
+main .wrapper {
+    /* border: 1px solid blue; */
+    position: relative;
+    height: 864px; /* 用高度撐開 */
+}
+
+main .wrapper > div {
+}
+
+/* --- 上面 --- */
+main .wrapper > div:first-child {
+    /* border: 1px solid green; */
+    display: flex;
+    gap: 36px;
+
+    position: absolute;
+}
+
+main .wrapper > div:first-child img{
+    width: 760px;
+    height: 480px;
+    flex-shrink: 0;
+}
+
+main .wrapper > div:first-child .text{
+    width: 33%;
+    /* border: 1px solid blue; */
+    font-size: var(--H5-size);
+    color: var(--ftc-700);
+    line-height: var(--line-height160);
+
+    padding-top: 60px;
+}
+
+/* --- 下面 --- */
+main .wrapper > div:last-child {
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    padding-left: 196px;
+    gap: 40px;
+
+    z-index: -1;
+    position: absolute;
+    margin-top: 422px;
+}
+
+main .wrapper > div:last-child img{
+    width: 440px;
+    height: 440px;
+    flex-shrink: 0;
+
+}
+
+main .wrapper > div:last-child .text{
+    font-size: var(--H5-size);
+    color: var(--ftc-700);
+    text-align: right;
+    line-height: var(--line-height160);
+    /* letter-spacing: 0.05em; */
+}
+
+main .wrapper > div:last-child > div {
+    /* border: 1px solid green; */
+    box-sizing: border-box;
+    padding-right: 30px;
+
+    position: relative; /* 讓裝飾文字定位用 */
+}
+
+main .wrapper > div:last-child .decorative-text {
+    font-size: var(--H5-size);
+    color: var(--bdc-pink);
+    display: flex;
+
+    /* 處理裝飾文字的旋轉和定位 */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    transform: rotate(90deg);
+    transform-origin: right bottom;
+}
+
+main .wrapper > div:last-child .decorative-text::before {
+    content: "";
+    display: inline-block;
+    height: 1.5px;
+    width: 100px;
+    background-color: var(--bdc-pink);
+    align-self: center;
+
+    margin-right: 10px; /* 推開線和裝飾文字的間距 */
+}
+
+
+
+/* -------------------- 婚禮企劃服務 -------------------- */
+
+.services {
+    /* outline: 1px solid red; */
+    background-image: url(../images/index_services_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    margin-top: 100px;
+}
+
+.services .filter {
+    /* border: 1px solid green; */
+
+    backdrop-filter: brightness(.58); /* 亮度遮罩 */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 160px;
+    text-align: center;
+
+    padding: 52px;
+}
+
+.services .filter div {
+    /* outline: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.services .filter div h1 {
+    /* outline: 1px solid green; */
+    font-family: var(--chinese-font);
+    font-size: var(--H1-size);
+    font-weight: bold;
+    color: var(--bdc-white);
+}
+
+.services .filter div p {
+    /* outline: 1px solid green; */
+    font-size: var(--H5-size);
+    line-height: var(--line-height160);
+    color: var(--bdc-white);
+}
+
+.services .filter a {
+    /* outline: 1px solid orange; */
+
+    display: block;
+    background-color: var(--bdc-green);
+    border-radius: 999px;
+    font-family: var(--chinese-font);
+    font-size: var(--H6-size);
+    font-weight: bold;
+    color: var(--bdc-white);
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    width: 160px;
+    padding: 16px;
+}
+
+
+
+
+
+/* -------------------- 婚禮我來辦 -------------------- */
+
+/* --- 文字 + 卡片區 --- */
+.host-and-partner {
+    /* border: 1px solid red; */
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    justify-content: center;
+}
+
+.host-and-partner .wrapper {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+}
+
+/* - 文字 - */
+
+.host-and-partner .wrapper .introduce {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+}
+
+.host-and-partner .wrapper .introduce h1 {
+    font-family: var(--chinese-font);
+    font-size: var(--H1-size);
+    color: var(--ftc-black);
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+.host-and-partner .wrapper .introduce p {
+    font-size: var(--H6-size);
+    line-height: var(--line-height160);
+    color: var(--ftc-700);
+}
+
+/* - 卡片 - */
+.host-and-partner .wrapper .card-area {
+    display: flex;
+    gap: 60px;
+}
+
+.card {
+    background-color: var(--bdc-pink);
+    padding: 16px;
+    border-radius: 8px;
+    width: 280px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    box-shadow: 0px 0px 14px hsla(0, 0%, 0%, .25);
+}
+
+.card > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card > div .card-img {
+    width: 280px;
+    height: 280px;
+}
+
+.card:first-child > div .card-img {
+    background-image: url(../images/index_host-and-partner_host.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card:last-child > div .card-img {
+    background-image: url(../images/index_host-and-partner_partner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.card > div .card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card > div .card-text h2{
+    font-family: var(--chinese-font);
+    font-size: var(--H5-size);
+    color: var(--bdc-white);
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+.card > div .card-text p{
+    font-size: var(--p-size);
+    color: var(--bdc-white);
+    line-height: var(--line-height160);
+}
+
+.card a {
+    border: 1px solid var(--bdc-white);
+    color: var(--bdc-white);
+    font-family: var(--eng-font);
+    text-align: center;
+    width: 84px;
+    border-radius: 8px;
+    display: block;
+    text-decoration: none;
+    padding: 4px 0;
+    line-height: 1.6;
+    align-self: flex-end;
+}
+
+/* --- 水平線 --- */
+.host-and-partner .section-divider {
+    height: 1px;
+    width: 83%;
+    background-color: var(--bdc-gray);
+    margin: 0 auto;
+}
+
+
+
+/* -------------------- Their Story -------------------- */
+
+.wedding-cases {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.wedding-cases .wrapper {
+    /* border: 1px solid red; */
+    max-width: var(--desk-width);
+    margin: 0 auto;
+    display: flex; /* h1 和 cases區 */
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.wedding-cases .wrapper h1 {
+    color: var(--ftc-black);
+    font-size: var(--H1-size);
+}
+
+.cases {}
+
+.cases .cases-top, .cases-bottom {
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+}
+
+.cases a {
+    display: flex; /* pic 和 h2*/
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    text-decoration: none;
+}
+
+.cases img{
+    /* border: 1px solid yellow; */
+    display:flex;
+}
+
+/* -- hover -- */
+
+.a-hover-effect {
+    /* border: 1px solid blue; */
+    position: relative;
+    transition: all 0.8s;
+}
+
+.a-hover-effect h3 {
+    border: 2px solid var(--bdc-white);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    height: 93%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px) brightness(0.8);
+
+    background-color: hsl(0, 0%, 0%, .1);
+    
+    color: var(--bdc-white);
+    font-size: var(--H5-size);
+    opacity: 0;
+    transform: scale(0.1);
+
+    transition: all 0.8s;
+}
+
+.cases a:hover .a-hover-effect h3 {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.a-hover-effect h3 span {
+    transform: rotate(-270deg) scale(0.5);
+
+    transition: 1.2s;
+}
+
+.cases a:hover .a-hover-effect h3 span {
+    transform: rotate(0deg) scale(1);
+}
+
+/* ----------------------------- */
+
+.cases h2 {
+    font-family: var(--eng-font), "Noto Serif TC";
+    color: var(--ftc-700);
+    font-size: var(--H4-size);
+}
+
+
+
+/* -------------------- 婚禮大小事 -------------------- */
+.blog-intro {
+    margin-top: 126px;
+}
+
+.blog-intro .wrapper {
+    max-width: var(--desk-width);
+    margin: 0 auto;
+    display: flex; /* text 和 area 和 view-more */
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 24px;
+}
+
+/* - blog-text - */
+.blog-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.blog-text h1 {
+    font-size: var(--H1-size);
+    font-family: var(--chinese-font);
+    font-weight: bold;
+    color: var(--ftc-black);
+}
+
+.blog-text p {
+    font-size: var(--H5-size);
+    color: var(--ftc-700);
+    line-height: var(--line-height160);
+}
+
+/* - blog-area - */
+.blog-area {
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    height: 524px;
+    justify-content: space-between;
+}
+
+.blog-area a {
+    text-decoration: none;
+    display: flex;
+    width: 300px;
+    border-radius: 24px;
+    box-sizing: border-box;
+}
+
+.blog-area a:nth-child(odd) { /* 調整左右照片的高度和垂直置中 */
+    height: 84%;
+    align-self: center;
+}
+
+.blog-area div { 
+    display: flex;
+    align-items: flex-end;
+    border-radius: 24px;
+    padding: 24px;
+}
+
+.blog-area .pic1 {
+    background-image: url(../images/index_blog-intro_pic1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-area .pic2 {
+    background-image: url(../images/index_blog-intro_pic2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-area .pic3 {
+    background-image: url(../images/index_blog-intro_pic3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* 照片遮罩 */
+.blog-area a:nth-child(even) div {
+    backdrop-filter: brightness(0.7);
+    background-color: transparent;
+
+    transition: all .8s .2s;
+}
+
+
+.blog-area a:nth-child(odd) div {
+    backdrop-filter: brightness(1);
+    background-color: hsl(0, 0%, 100%, .3);
+
+    transition: all .8s .2s;
+}
+
+/* 暫時示意 */
+.blog-area a:nth-child(odd):hover div {
+    backdrop-filter: brightness(0.7);
+    background-color: transparent;
+}
+
+.blog-area a:nth-child(even):hover div {
+    backdrop-filter: brightness(1);
+    background-color: hsl(0, 0%, 100%, .3);
+}
+
+/* 照片文字 */
+.blog-area p {
+    /* border: 1px solid green; */
+    font-family: var(--chinese-font);
+    font-weight: bold;
+    font-size: var(--H6-size);
+    line-height: var(--line-height160);
+    color: var(--bdc-white);
+    letter-spacing: 0.05em;
+}
+
+/* - view more - */
+.blog-intro .wrapper > a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--ftc-700);
+    font-size: var(--H4-size);
+    display: flex; /* 文字和線 */
+    gap: 12px;
+    align-items: center;
+}
+
+.blog-intro .wrapper > a::before {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 100px;
+    background-color: var(--ftc-700);
+}
+
+.blog-intro .wrapper > a::after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 100px;
+    background-color: var(--ftc-700);
+}
+
+
+
+/* -------------------- 預約按鈕 -------------------- */
+
+.cta-area {
+    margin-top: 120px;
+}
+
+.cta-area .wrapper {
+    /* border: 1px solid red; */
+    max-width: var(--desk-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.cta-area .wrapper div {
+    /* border: 1px solid red; */
+    position: relative; /* 讓偽元素線條定位用 */
+    padding-bottom: 20px; /* 把線往下推 */
+}
+
+.cta-area .wrapper h1 {
+    font-size: var(--H5-size);
+    color: var(--ftc-black);
+    letter-spacing: 0.2em;
+
+    /* border: 1px solid red; */
+}
+
+
+/* 原本的按鈕，新製作的在 hover 區 */
+/* .cta-area .wrapper a {
+    text-decoration: none;
+    font-family: var(--chinese-font);
+    font-size: var(--H5-size);
+    color: var(--bdc-white);
+    font-weight: bold;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    background-color: var(--bdc-green);
+    padding: 12px 32px;
+    border-radius: 999px;
+} */
+
+/* --- hover --- */
+
+/* - 線條動畫 -  */
+.cta-area .wrapper h1::after {
+    content: "";
+    display: block;
+    height: 1.5px;
+    width:0%;
+    background-color: var(--bdc-green);
+
+    position: absolute;
+    left:50%;
+    top:100%;
+    transform: translateX(-50%);
+
+    transition: width 1.5s;
+}
+
+.cta-area .wrapper:hover h1::after {
+    width:100%
+}
+
+
+/* 製作按鈕 */
+.cta-area .wrapper a {
+    text-decoration: none;
+    font-family: var(--chinese-font);
+    font-size: var(--H5-size);
+    color: var(--bdc-green);
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: .2em;
+    
+    
+    /* background-color: var(--bdc-green); */
+    padding: 12px 24px 12px 60px;
+    border-radius: 999px;
+
+    position: relative;
+
+    transition: padding .3s;
+}
+
+/* before 箭頭 */
+.cta-area .wrapper a::before {
+    content:"";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid var(--bdc-white);
+    border-right: 2px solid var(--bdc-white);
+    
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+
+    left: 18px;
+
+    z-index: 2;
+
+    transition: all .3s;
+
+}
+
+/* after 背景 */
+.cta-area .wrapper a::after {
+    content: "";
+    display: block;
+
+    width: 48px;
+    height: 48px;
+    background-color: var(--bdc-green);
+    border-radius: 999px;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    left: 0;
+    
+    z-index: 1;
+
+    transition: all .5s;
+}
+
+.cta-area .wrapper a span {
+    position: relative;
+    z-index: 3;
+
+    transition: all .3s;
+}
+
+/* 按鈕 hover */
+.cta-area .wrapper a:hover {
+    padding: 12px 24px 12px 44px;
+}
+
+.cta-area .wrapper a:hover::before {
+    left: 24px;
+}
+
+.cta-area .wrapper a:hover::after {
+    width: 100%;
+}
+
+.cta-area .wrapper a:hover span {
+    color: var(--bdc-white);
+}

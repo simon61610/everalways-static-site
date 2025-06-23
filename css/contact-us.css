@@ -1,0 +1,203 @@
+/* -------------------- Banner -------------------- */
+.banner {
+    margin-top: 88px;
+    height: 400px;
+    position: relative;
+}
+
+.banner::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-image: url(../images/contact-us_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 80px;
+    background-attachment: fixed;
+    
+
+    z-index: -1;
+    filter: brightness(1);
+}
+
+.banner .wrapper {
+    /* border: 1px solid red; */
+    max-width: var(--desk-width);
+    margin: 0 auto;
+    padding: 52px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.banner .wrapper h1 {
+    font-size: var(--H2-size);
+    color: var(--ftc-black);
+    font-weight: bold;
+}
+
+
+
+
+/* -------------------- 聯絡表單 -------------------- */
+.contact {
+    margin-top: 60px;
+}
+
+.contact .wrapper {
+    max-width: var(--desk-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .wrapper h2 {
+    font-weight: bold;
+    font-family: var(--chinese-font);
+    font-size: var(--H3-size);
+    color: var(--ftc-700);
+    margin-bottom: 48px;
+}
+
+/* --------------- Form --------------- */
+
+form {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* ----- 排 ----- */
+.row {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.row > div {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* ----- check-box 對齊 ----- */
+.sevices-interest > p:first-child {
+    margin-bottom: 8px;
+}
+
+.sevices-interest > .space {
+    margin-top: 8px;
+}
+
+.check-box {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 8px;
+}
+
+.check-box label {
+    cursor: pointer;
+}
+
+
+/* 文字樣式調整 */
+form {
+    font-size: var(--H6-size);
+    color: var(--ftc-700);
+}
+
+.required-mark::before {
+    content: "*";
+    color: var(--bdc-pink);
+}
+
+/* 表格樣式調整 */
+/* .text-input */
+.text-input input {
+    padding: 16px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--ftc-300);
+    font-family: "Noto Serif TC";
+    color: var(--ftc-black);
+    font-size: var(--H6-size);
+}
+
+.text-input input::placeholder {
+    font-family: "Noto Serif TC";
+    color: var(--ftc-300);
+    font-size: var(--H6-size);
+}
+
+.text-input input:focus {
+    outline: none;
+    /* outline: .5px solid var(--ftc-300); */
+}
+
+/* date-input */
+.date-input input {
+    padding: 16px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--ftc-300);
+    font-family: "Noto Serif TC";
+    color: var(--ftc-black);
+    font-size: var(--H6-size);
+}
+
+.date-input input:focus {
+    outline: 1px solid var(--ftc-300);
+}
+
+/* message */
+.message textarea {
+    height: 100%;
+    resize: none;
+    padding: 16px;
+
+    border: 1px solid var(--ftc-300);
+
+    font-family: "Noto Serif TC";
+    color: var(--ftc-black);
+    font-size: var(--H6-size);
+    
+    margin-top: 8px;
+}
+
+.message textarea:focus {
+    outline: 1px solid var(--ftc-300);
+}
+
+/* ----- 送出按鈕 ----- */
+.form-btn-block {
+    align-self: center;
+
+}
+
+.form-btn {
+    padding: 8px 32px;
+    background-color: var(--bdc-green);
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: var(--H6-size);
+    color: var(--bdc-white);
+
+    cursor: pointer;
+
+    transition: .5s all;
+}
+
+.form-btn:hover {
+    background-color: hsl(145, 54%, 70%);
+}

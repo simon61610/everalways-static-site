@@ -1,0 +1,298 @@
+/* -------------------- 理念 & 特色 -------------------- */
+main {
+    margin-top: 140px;
+}
+
+main .wrapper {
+    /* border: 1px solid red; */
+    max-width: var(--desk-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 52px;
+}
+
+main .wrapper > div{
+    /* border: 1px solid green; */
+}
+
+/* - 理念 - */
+.about-mission {
+    display: flex;
+    gap: 180px;
+    justify-content: flex-end;
+    padding-left: 80px;
+}
+
+.about-mission .text-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 52px;
+}
+
+.about-mission .text-area h1 {
+    font-size: var(--H3-size);
+    font-family: var(--eng-font);
+    color: var(--bdc-pink);
+}
+
+.about-mission .text-area p {
+    font-size: var(--H5-size);
+    line-height: var(--line-height160);
+    color: var(--ftc-black);
+    text-align: justify;
+}
+
+.about-mission .pic1 {
+    background-image: url(../images/about-us_main_pic1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 680px;
+    width: 460px;
+    flex-shrink: 0;
+}
+
+/* - 特色 - */
+.about-features {
+    display: flex;
+    gap: 180px;
+    padding-right: 92px;
+}
+
+.about-features .pic2 {
+    background-image: url(../images/about-us_main_pic2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 680px;
+    width: 440px;
+    flex-shrink: 0;
+}
+
+.about-features .text-area {
+    line-height: var(--line-height160);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-features .text-area > div {
+    font-size: var(--H6-size);
+    color: var(--ftc-700);
+}
+
+.about-features .text-area h2 {
+    font-family: var(--chinese-font);
+    font-weight: bold;
+}
+
+.about-features .text-area .pink {
+    color: var(--bdc-pink);
+}
+
+.about-features .text-area p {}
+
+
+
+
+
+
+/* -------------------- 雜誌 & 名人推薦 -------------------- */
+.recommendation {
+    margin-top: 80px;
+}
+
+.recommendation .wrapper {
+    max-width: var(--desk-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    /* border: 1px solid red; */
+}
+
+.recommendation .wrapper > .outer {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: 100%;
+}
+
+.recommendation .wrapper h1 {
+    font-size: var(--H3-size);
+    color: var(--ftc-black);
+    font-weight: bold;
+}
+
+.recommendation .wrapper .media-area {
+        /* border: 1px solid green; */
+        display: flex;
+        justify-content: center;
+        gap: 120px;
+}
+
+.media-magazines, .media-celebrities {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+/* - 雜誌 - */
+.media-magazines {}
+
+.media-magazines h2 {
+    font-size: var(--H5-size);
+    color: var(--ftc-700);
+    font-weight: bold;
+}
+
+.media-magazines .intro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.media-magazines .intro div {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.media-magazines .intro img {
+    width: 40px;
+    border: 1px solid #ccc;
+}
+
+.media-magazines .intro p {
+    font-family: var(--eng-font);
+    font-size: var(--H6-size);
+    color: var(--ftc-700);
+}
+
+/* - 垂直線 - */
+.vertical-line {
+    flex-basis: 1px;
+    background-color: var(--bdc-gray);
+}
+
+/* - 名人 - */
+.media-celebrities {}
+
+.media-celebrities h2 {
+    font-size: var(--H5-size);
+    color: var(--ftc-700);
+    font-weight: bold;
+}
+
+.media-celebrities .intro {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.media-celebrities .intro p {
+    font-size: var(--H6-size);
+    color: var(--ftc-700);
+}
+
+/* 分隔線 */
+.recommendation .section-divider {
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+}
+
+
+
+
+/* -------------------- 地址 -------------------- */
+
+.address {
+    margin-top: 100px;
+}
+
+.address .wrapper {
+    /* border: 1px solid green; */
+    max-width: var(--desk-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address .wrapper .text-area {
+    /* border: 1px solid #ccc; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* - 文字 - */
+.text-icon {}
+
+.text-icon div {
+    font-size: var(--H6-size);
+    font-family: var(--chinese-font);
+    color: var(--ftc-black);
+    margin-bottom: 20px;
+}
+
+.text-icon div i {
+    font-size: 20px;
+    margin-right: 12px;
+    color: var(--bdc-pink);
+}
+
+/* - 按鈕 - */
+.address .wrapper .text-area .btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.address .wrapper .text-area .btn a{
+    display: block;
+    text-decoration: none;
+    font-family: var(--chinese-font);
+    font-size: var(--H6-size);
+    border-radius: 999px;
+    font-weight: bold;
+    padding: 16px 0;
+    width: 168px;
+    text-align: center;
+}
+
+.contact-btn {
+    background-color: var(--bdc-green);
+    color: var(--ftc-white);
+}
+
+.map-btn {
+    border: 2px solid var(--bdc-green);
+    color: var(--bdc-green);
+}
+
+/* - 圖片 - */
+.address .wrapper .pic1 {
+    width: 300px;
+    height: 300px;
+    background-image: url(../images/about-us_address_pic1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.address .wrapper .pic2 {
+    width: 200px;
+    height: 400px;
+    background-image: url(../images/about-us_address_pic2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

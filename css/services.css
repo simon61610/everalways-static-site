@@ -1,0 +1,335 @@
+/* -------------------- Banner -------------------- */
+.banner {
+    margin-top: 88px;
+    height: 480px;
+    position: relative;
+}
+
+.banner::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-image: url(../images/services_banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+
+    z-index: -1;
+    filter: brightness(0.8);
+}
+
+.banner .wrapper {
+    /* border: 1px solid red; */
+    max-width: var(--desk-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 52px;
+    box-sizing: border-box;
+}
+
+/* - 文字區 - */
+.banner-text-area {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.banner-text-area h1 {
+    font-size: var(--H1-size);
+    font-family: var(--eng-font);
+    color: var(--bdc-white);
+}
+
+.banner-text-area p {
+    color: var(--bdc-white);
+    line-height: var(--line-height160);
+    font-size: var(--H6-size);
+}
+
+.banner-text-area p:nth-child(2) {
+    padding-left: 32px;
+}
+
+.banner-text-area p:nth-child(3) {
+    padding-left: 64px;
+}
+
+
+/* - 按鈕區 - */
+.banner-btn-area {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    align-items: center;
+}
+
+.banner-btn-area h2 {
+    font-family: var(--chinese-font);
+    color: var(--bdc-white);
+    font-size: var(--H5-size);
+    letter-spacing: 0.2em;
+}
+
+.banner-btn-area div {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.banner-btn-area a {
+    text-decoration: none;
+    font-family: var(--chinese-font);
+    color: var(--bdc-black);
+    font-size: var(--H6-size);
+    letter-spacing: 0.2em;
+    display: block;
+    padding: 16px 32px;
+    background-color: var(--bdc-white);
+    border-radius: 999px;
+    text-align: center;
+}
+
+
+
+
+/* -------------------- 服務介紹 -------------------- */
+main {}
+
+main .wrapper {
+    max-width: var(--desk-width);
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.service-block {
+    display: flex;
+    gap: 80px;
+    padding: 60px 0;
+}
+
+/* --- 文字 --- */
+.service-block .text-area {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.service-block .text-area div {}
+
+/* - title - */
+.title-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.title-text h1 {
+    font-family: var(--chinese-font);
+    font-weight: bold;
+    font-size: var(--H3-size);
+    color: var(--ftc-black);
+    letter-spacing: 0.1em;
+}
+
+.title-text h2 {
+    font-size: var(--H4-size);
+    color: var(--ftc-black);
+}
+
+/* - content - */
+.content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.content-text p {
+    line-height: var(--line-height160);
+    font-size: var(--H6-size);
+    color: var(--ftc-700);
+}
+
+/* - h3 和 a - */
+.service-block .text-area h3 {
+    font-weight: bold;
+    color: var(--ftc-700);
+    font-size: var(--H6-size);
+}
+
+.service-block .text-area a {
+    display: block;
+    text-decoration: none;
+    background-color: var(--bdc-green);
+    color: var(--bdc-white);
+    font-size: var(--H6-size);
+    font-family: var(--chinese-font);
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding: 16px 32px;
+    align-self: flex-start;
+    border-radius: 999px;
+}
+
+
+/* --- 圖片 --- */
+.service-block .pic {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    /* border: 1px solid green; */
+    flex-shrink: 0;
+}
+
+.service-block:nth-child(1) .pic {
+    background-image: url(../images/services_main_pic1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.service-block:nth-child(2) .pic {
+    background-image: url(../images/services_main_pic2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.service-block:nth-child(3) .pic {
+    background-image: url(../images/services_main_pic3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.service-block:nth-child(1) .pic, .service-block:nth-child(3) .pic {
+    order: 1;
+}
+
+
+
+
+/* -------------------- 水平分隔線 -------------------- */
+
+.section-divider {
+    max-width: var(--desk-width);
+    height: 1px;
+    background-color: var(--bdc-gray);
+    margin: 40px auto 0;
+}
+
+/* -------------------- 方案價格與細項 -------------------- */
+
+/* - 外層區 - */
+.plan {
+    margin-top: 100px;
+}
+
+.plan .wrapper {
+    max-width: var(--desk-width);
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+}
+
+.plan .wrapper h1 {
+    font-size: var(--H2-size);
+    font-family: var(--eng-font);
+    color: var(--ftc-black);
+}
+
+.plan .wrapper .plan-all {
+    /* border: 1px solid green; */
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* --- 方案卡片區 --- */
+.plan-card {
+    background-color: var(--bdc-white);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 40px;
+
+    width: 380px;
+    
+    box-shadow: 0 0 14px hsla(0, 0%, 0%, .13);
+}
+
+/* - title - */
+.plan-title {
+    background-color: var(--bdc-green);
+    padding: 40px;
+    border-radius: 32px 32px 0 0;
+
+    height: 228px;
+    box-sizing: border-box;
+}
+
+.plan-title h2 {
+    font-size: 32px;
+    font-family: var(--chinese-font);
+    font-weight: bold;
+    color: var(--bdc-white);
+    margin-bottom: 20px;
+}
+
+.plan-title p {
+    font-size: var(--H5-size);
+    font-family: var(--chinese-font);
+    color: var(--bdc-white);
+    line-height: var(--line-height160);
+}
+
+/* - items - */
+.plan-items {
+    height: 600px;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.plan-items p {
+    font-size: var(--H5-size);
+    font-family: var(--chinese-font);
+    color: var(--ftc-700);
+}
+
+.plan-items i {
+    margin-right: 12px;
+}
+
+/* - price - */
+.plan-price {
+    font-size: var(--H3-size);
+    font-weight: bold;
+    color: var(--ftc-700);
+}
+
+/* --- V & X icon color --- */
+.fa-check {
+    color: var(--bdc-green);
+}
+
+.fa-xmark {
+    color: var(--bdc-pink);
+}
