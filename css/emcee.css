@@ -40,13 +40,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 60px;
 }
 
 .banner-text-area h1 {
     color: var(--bdc-white);
     font-size: var(--H1-size);
-    font-family: var(--eng-font);
+    font-family: "La Belle Aurore";
 }
 
 .banner-text-area p {
@@ -77,13 +77,13 @@
 }
 
 .left-side {
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
     /* grid-column: 1 / 2; */
     width: 200px;
 }
 
 .right-side {
-    outline: 1px solid yellow;
+    /* outline: 1px solid yellow; */
     /* grid-column: 2 / 5; */
 }
 
@@ -117,3 +117,76 @@
 .emcee-filter select {
     padding: 8px 8px;
 }
+
+
+/* ---------------- 主持人卡片區 ---------------- */
+.emcee-cards-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%
+}
+
+.emcee-card {
+    /* border: 1px solid red; */
+    flex-basis: 20%;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.emcee-card img {
+    width: 252px;
+    border-radius: 999px 999px 0 0;
+}
+
+.emcee-card .eng-name {
+    font-family: "La Belle Aurore";
+    font-size: var(--H1-size);
+    color: var(--bdc-green);
+    position: absolute;
+    bottom: 124px;
+    right: 16px;
+    z-index: 2;
+}
+
+.emcee-card-text {
+    background-color: hsl(60, 100%, 99%, .9);
+    padding: 16px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.emcee-card-text h4 {
+    color: var(--ftc-700);
+    font-weight: bold;
+    font-size: var(--H5-size);
+    margin-bottom: 16px;
+}
+
+.emcee-card-text > p {
+    color: var(--ftc-700);
+    /* font-weight: bold; */
+    font-size: var(--p-size);
+    line-height: var(--line-height160);
+    margin-bottom: 12px;
+}
+
+.emcee-card-text .tags {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.emcee-card-text .tags p {
+    padding: 8px 8px;
+    background-color: var(--ftc-300);
+    color: var(--bdc-white);
+    font-family: var(--chinese-font);
+    border-radius: 999px;
+}
+
+
+
+

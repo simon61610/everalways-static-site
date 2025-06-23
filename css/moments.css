@@ -46,7 +46,7 @@
 .banner-text-area h1 {
     color: var(--bdc-white);
     font-size: var(--H1-size);
-    font-family: var(--eng-font);
+    font-family: "La Belle Aurore";
 }
 
 .banner-text-area p {
