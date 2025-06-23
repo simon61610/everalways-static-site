@@ -104,7 +104,7 @@
 }
 
 .emcee-filter form label, .emcee-filter form select {
-    color: var(--ftc-black);
+    color: var(--ftc-700);
     font-size: var(--H6-size);
     font-family: var(--chinese-font);
     margin-bottom: 8px;
@@ -132,21 +132,29 @@
     flex-basis: 20%;
     margin-bottom: 40px;
     position: relative;
+
+    transform: scale(1);
+    transition: 0.5s all;
 }
 
 .emcee-card img {
     width: 252px;
     border-radius: 999px 999px 0 0;
+    box-shadow: 0 0 14px hsl(0, 0%, 0%, .13);
+
 }
 
 .emcee-card .eng-name {
     font-family: "La Belle Aurore";
-    font-size: var(--H1-size);
+    font-size: var(--H2-size);
     color: var(--bdc-green);
     position: absolute;
     bottom: 124px;
     right: 16px;
     z-index: 2;
+
+    transform: translateY(0%) scale(1);
+    transition: 0.5s all;
 }
 
 .emcee-card-text {
@@ -185,6 +193,15 @@
     color: var(--bdc-white);
     font-family: var(--chinese-font);
     border-radius: 999px;
+}
+
+.emcee-card:hover {
+    transform: scale(1.1);
+}
+
+.emcee-card:hover .eng-name {
+    transform: translateY(-20%) scale(1.1);
+    text-shadow: 0 0 14px hsl(0, 0%, 0%, .45);
 }
 
 
