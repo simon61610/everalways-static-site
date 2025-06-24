@@ -169,7 +169,6 @@
 
 
 
-
 /* -------------------- 偽元素分隔線 -------------------- */
 /* --- 導覽欄 hover 底線 --- */
 /* -- 左邊 -- */
@@ -258,7 +257,11 @@
     display: none;
 }
 
-
+/* ----- active 狀態 ----- */
+li.active-now, li > a.active-now, .sub-nav li > a.active-now{
+    color: var(--bdc-pink);
+    /* font-weight: bold; */
+}
 
 
 
