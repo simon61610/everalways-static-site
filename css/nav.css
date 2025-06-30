@@ -164,8 +164,51 @@
     bottom: 0;
     right: 2%;
     margin: auto;
+
+    cursor: pointer;
 }
 
+/* 新增隱藏搜尋框 */
+.search-container {
+    position: absolute;
+    top: 80%;
+    right: 2%;
+    /* border: 1px solid green; */
+
+    display: none; /* 先藏起來 */
+}
+.search-input {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    font-family: "Noto Serif TC";
+    box-shadow: 0 0 14px hsla(0, 0%, 0%, .13);
+    font-size: var(--p-size);
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+/* 打叉叉取消 */
+.cancel-bar1, .cancel-bar2 {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 16px;
+    height: 2px;
+    background-color: var(--bdc-pink);
+    border-radius: 16px;
+}
+.cancel-bar1 {
+    transform: rotate(45deg);
+}
+.cancel-bar2 {
+    transform: rotate(-45deg);
+}
 
 
 
@@ -299,7 +342,7 @@ li.active-now, li > a.active-now, .sub-nav li > a.active-now{
 }
 
 
-/* 文字放大效果，不一定會加 */
+/* 文字放大效果 */
 .main-nav > ul > li {
     scale: 1;
     

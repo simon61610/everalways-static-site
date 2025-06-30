@@ -8,10 +8,10 @@
     /* 統一字距 */
     letter-spacing: 0.05em;
 
+    /* 以下是變數設定 */
     /* wrapper 寬度 */
     --desk-width: 1200px;
 
-    /* 以下是變數設定 */
     /* 特殊字體 */
     --eng-font: "Libre Caslon Display";
     --chinese-font: "Inter";
@@ -51,3 +51,13 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
+/* 可能要針對 fixed 改成 scroll，手機上比較不會有問題，視情況再調整 */
+/* @media (max-width: 768px) {
+  body {
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+} */
