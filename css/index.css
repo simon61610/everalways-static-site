@@ -53,6 +53,7 @@
 .banner-text-bg > p:first-child {
     font-size: var(--H3-size);
     font-family: var(--eng-font);
+    font-variant: small-caps; /* 文字變體: 小寫英文字母轉成稍微大一點的英文字母 */
 }
 
 .banner-text-bg > p:last-child {
