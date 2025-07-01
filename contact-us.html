@@ -22,43 +22,67 @@
     <link rel="stylesheet" href="./css/contact-us.css">
     <link rel="stylesheet" href="./css/partner-carousel.css">
     <link rel="stylesheet" href="./css/footer.css">
+
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="./js/navSearch.js"></script>
 </head>
 
 
 
 <body>
     <!-- -------------------- 導覽列 --------------------  -->
-    <nav class="main-nav">
-        <ul class="main-nav-left">
-            <li><a href="./about-us.html">About Us</a></li>
-            <li>Services
-                <ul class="sub-nav">
-                    <li><a href="./services.html">婚禮顧問</a></li>
-                    <li><a href="./services.html">求婚企劃</a></li>
-                    <li><a href="./services.html">抓週派對</a></li>
-                    <li><a href="./services.html">廠商推薦</a></li>
-                </ul>
-            </li>
-            <li><a href="./emcee.html">Emcee Team</a></li>
-        </ul>
-        <a href="./index.html"><img src="./images/Logo/logo_blcak.svg" alt="" class="nav-logo"></a>
-        <ul class="main-nav-right">    
-            <li><a href="./moments.html">Moments</a></li>
-            <li><a href="./stories-tips.html">Stories & Tips</a></li>
-            <li>Contact Us
-                <ul class="sub-nav">
-                    <li><a href="./contact-us.html" class="active-now">檔期詢問</a></li>
-                    <li><a href="./faq.html">常見問題</a></li>
-                </ul>
-            </li>
-        </ul>
-        <i class="fa-solid fa-magnifying-glass"></i>
+    <nav>
+        <!-- 搜尋框 -->
+        <div class="top-search" id="topSearch">
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search...">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
 
-        <!-- 新增隱藏搜尋框 -->
-        <div class="search-container">
-            <input type="text" class="search-input" placeholder="婚禮方案、主持人、關於我們...">
-            <span class="cancel-bar1"></span>
-            <span class="cancel-bar2"></span>
+        <div class="main-nav">
+
+            <!-- 左邊 -->
+            <ul class="main-nav-left">
+                <li><a href="./about-us.html">About Us</a></li>
+                <li>Services
+                    <ul class="sub-nav">
+                        <li><a href="./services.html">婚禮顧問</a></li>
+                        <li><a href="./services.html">求婚企劃</a></li>
+                        <li><a href="./services.html">抓週派對</a></li>
+                        <li><a href="./services.html">廠商推薦</a></li>
+                    </ul>
+                </li>
+                <li><a href="./emcee.html">Emcee Team</a></li>
+            </ul>
+    
+            <!-- 中間 Logo -->
+            <a href="./index.html">
+                <img src="./images/Logo/logo_blcak.svg" alt="" class="nav-logo">
+            </a>
+    
+            <!-- 右邊 -->
+            <ul class="main-nav-right">    
+                <li><a href="./moments.html">Moments</a></li>
+                <li><a href="./stories-tips.html">Stories & Tips</a></li>
+                <li>Contact Us
+                    <ul class="sub-nav">
+                        <li><a href="./contact-us.html" class="active-now">檔期詢問</a></li>
+                        <li><a href="./faq.html">常見問題</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+    
+            <!-- 新增隱藏搜尋框 -->
+            <!-- <div class="search-container">
+                <input type="text" class="search-input" placeholder="婚禮方案、主持人、關於我們...">
+                <span class="cancel-bar1"></span>
+                <span class="cancel-bar2"></span>
+            </div> -->
+            
         </div>
     </nav>
 

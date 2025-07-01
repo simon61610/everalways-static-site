@@ -1,14 +1,5 @@
 /* -------------------- 導覽列 -------------------- */
-.main-nav {
-    background-color: hsl(60, 100%, 99%, .7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: relative; /* 讓 search-icon 定位 */
-
-    height: 88px;
-
+nav {
     position: fixed;
     width: 100%;
     top: 0;
@@ -16,12 +7,25 @@
     z-index: 99;
 }
 
+
+.main-nav {
+    background-color: hsl(60, 100%, 99%, .7);
+    display: flex;
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+
+    position: relative; /* 讓 search-icon 定位 */
+
+    height: 88px;
+}
+
 /* ----- 左邊 ----- */
 .main-nav-left {
     flex-basis: 100%;
     display: inline-flex;
     justify-content: flex-end;
-    gap: 72px;
+    gap: clamp(36px, calc(72/1200 * 100vw), 72px);
 }
 
 .main-nav-left > li{
@@ -84,7 +88,7 @@
     flex-basis: 100%;
     display: inline-flex;
     justify-content: flex-start;
-    gap: 72px;
+    gap: clamp(36px, calc(72/1200 * 100vw), 72px);
 }
 
 .main-nav-right > li{
@@ -166,16 +170,17 @@
     margin: auto;
 
     cursor: pointer;
+
+    transition: all .5s ease;
 }
 
 /* 新增隱藏搜尋框 */
-.search-container {
+/* .search-container {
     position: absolute;
     top: 80%;
     right: 2%;
-    /* border: 1px solid green; */
 
-    display: none; /* 先藏起來 */
+    display: none;
 }
 .search-input {
     padding: 12px;
@@ -189,10 +194,47 @@
 
 .search-input:focus {
     outline: none;
+} */
+
+/* top 搜尋框 */
+.top-search {
+    /* border: 1px solid red; */
+    background-color: var(--ftc-black);
+
+    display: none;
+}
+.top-search > div {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid green; */
+    /* gap: 16px; */
+    font-size: var(--H5-size);
+    color: var(--bdc-white);
+}
+
+.top-search > div > i {
+    cursor: pointer;
+}
+
+.top-search input {
+    padding: 16px;
+    display: block;
+    background-color: var(--ftc-black);
+    border: none;
+    color: var(--bdc-white);
+    font-size: var(--H5-size);
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.top-search input:focus{
+    outline: none;
 }
 
 /* 打叉叉取消 */
-.cancel-bar1, .cancel-bar2 {
+/* .cancel-bar1, .cancel-bar2 {
     position: absolute;
     right: 12px;
     top: 50%;
@@ -208,8 +250,12 @@
 }
 .cancel-bar2 {
     transform: rotate(-45deg);
-}
+} */
 
+/* 搜尋的 hover 效果 */
+.main-nav > i:hover {
+    color: #fb6956;
+}
 
 
 /* -------------------- 偽元素分隔線 -------------------- */

@@ -17,13 +17,23 @@
     --chinese-font: "Inter";
 
     /* 字體大小 */
-    --H1-size: 4.8rem;
+    /* --H1-size: 4.8rem;
     --H2-size: 4rem;
     --H3-size: 3.6rem;
     --H4-size: 2.4rem;
     --H5-size: 2rem;
     --H6-size: 1.6rem;
-    --p-size: 1.4rem;
+    --p-size: 1.4rem; */
+
+    --H1-size: clamp(3.6rem, calc(48/1200 * 100vw), 4.8rem);
+    --H2-size: clamp(3.2rem, calc(40/1200 * 100vw), 4rem);
+    --H3-size: clamp(2.4rem, calc(36/1200 * 100vw), 3.6rem);
+    --H4-size: clamp(2rem, calc(24/1200 * 100vw), 2.4rem);
+    --H5-size: clamp(1.6rem, calc(20/1200 * 100vw), 2rem);
+    --H6-size: clamp(1.4rem, calc(16/1200 * 100vw), 1.6rem);
+    --p-size: clamp(1.2rem, calc(14/1200 * 100vw), 1.4rem);
+
+
 
     /* 行高 */
     --line-height160: 1.6;
