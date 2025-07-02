@@ -1,0 +1,125 @@
+@media screen and (max-width: 1000px) {
+
+    .main-nav {
+        flex-direction: column;
+        height: auto;
+        /* background-color: #ccc; */
+
+        /* border: 1px solid blue; */
+
+        position: absolute;
+        top: 88px;
+        right: -100%;
+
+        width: 60vw;
+
+        background-color: var(--bdc-white);
+        box-shadow: 0 0 14px hsla(0, 0%, 0%, .13);
+
+        display: block;
+    }
+
+    .nav-logo {
+        border: 1px solid red;
+        order: 3;
+        display: none;
+    }
+
+    .main-nav-left {
+        flex-direction: column;
+        /* border: 1px solid red; */
+        gap: 12px;
+        order: 1;
+        width: 100%;
+        gap: 0px;
+    }
+
+    .main-nav-right {
+        flex-direction: column;
+        /* border: 1px solid red; */
+        gap: 12px;
+        order: 2;
+        width: 100%;
+        gap: 0px;
+    }
+
+    /* 左邊次導覽 */
+    .main-nav-left > li {
+        flex-direction: column;
+        /* border: 1px solid orange; */
+    }
+
+    .main-nav-left .sub-nav {
+        position: static;
+        display: block;
+        width: 100%;
+        border: none;
+        /* border: 1px solid blue; */
+        margin-top: 4px;
+    }
+
+
+    /* 右邊次導覽 */
+    .main-nav-right > li {
+        flex-direction: column;
+        /* border: 1px solid orange; */
+    }
+    .main-nav-right .sub-nav {
+        position: static;
+        display: block;
+        width: 100%;
+        border: none;
+        /* border: 1px solid blue; */
+        margin-top: 4px;
+
+    }
+    
+
+    /* 隱藏 logo */
+    .nav-logo-outer {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+    }
+
+
+
+    /* 漢堡選單 */
+    .main-nav-outer .fa-bars {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+
+    /* 搜尋放大鏡 */
+    .main-nav > .fa-magnifying-glass {
+        display: none;
+    }
+
+
+    /* 處理 hover */
+    .main-nav-left > li::after {
+        display: none;
+    }
+
+    .main-nav-right > li::after {
+        display: none;
+    }
+
+    .main-nav > ul > li:hover {
+    scale: 1;
+    }
+
+    .main-nav > ul > li{
+        transition: background-color .5s ease;
+    }
+
+    .main-nav > ul > li:hover {
+        background-color: #fefed7;
+    }
+
+}

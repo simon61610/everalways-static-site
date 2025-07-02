@@ -7,9 +7,16 @@ nav {
     z-index: 99;
 }
 
+.main-nav-outer {
+    height: 88px;
+    background-color: hsl(60, 100%, 99%, .7);
+    border: red;
+    position: relative;
+}
+
 
 .main-nav {
-    background-color: hsl(60, 100%, 99%, .7);
+    /* background-color: hsl(60, 100%, 99%, .7); */
     display: flex;
     /* display: none; */
     justify-content: center;
@@ -155,6 +162,23 @@ nav {
     transition-timing-function: ease;
 }
 
+/* ----- 隱藏 logo ----- */
+.nav-logo-outer {
+    display: block;
+    width: 72px;
+
+    scale: 1;
+
+    transition-property: scale;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+
+    display: none;
+}
+.nav-logo-outer:hover {
+    scale: 1.05;
+}
+
 /* ----- 最右邊 search-icon ----- */
 .main-nav > i {
     font-size: 16px;
@@ -251,6 +275,14 @@ nav {
 .cancel-bar2 {
     transform: rotate(-45deg);
 } */
+
+/* 漢堡選單 */
+.main-nav-outer .fa-bars {
+    display: none;
+    color: var(--bdc-pink);
+    font-size: 20px;
+    cursor: pointer;
+}
 
 /* 搜尋的 hover 效果 */
 .main-nav > i:hover {

@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="./css/emcee.css">
     <link rel="stylesheet" href="./css/partner-carousel.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <!-- CSS - RWD -->
+    <link rel="stylesheet" href="./css/rwd/nav-rwd.css">
 
     <!-- js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
@@ -31,7 +33,6 @@
 
 
 <body>
-    <!-- -------------------- 導覽列 --------------------  -->
     <!-- -------------------- 導覽列 --------------------  -->
     <nav>
         <!-- 搜尋框 -->
@@ -43,46 +44,56 @@
             </div>
         </div>
 
-        <div class="main-nav">
+        <div class="main-nav-outer">
 
-            <!-- 左邊 -->
-            <ul class="main-nav-left">
-                <li><a href="./about-us.html">About Us</a></li>
-                <li>Services
-                    <ul class="sub-nav">
-                        <li><a href="./services.html">婚禮顧問</a></li>
-                        <li><a href="./services.html">求婚企劃</a></li>
-                        <li><a href="./services.html">抓週派對</a></li>
-                        <li><a href="./services.html">廠商推薦</a></li>
-                    </ul>
-                </li>
-                <li><a href="./emcee.html" class="active-now">Emcee Team</a></li>
-            </ul>
+            <div class="main-nav" id="mainNav">
+                <!-- 左邊 -->
+                <ul class="main-nav-left">
+                    <li><a href="./about-us.html">About Us</a></li>
+                    <li>Services
+                        <ul class="sub-nav">
+                            <li><a href="./services.html">婚禮顧問</a></li>
+                            <li><a href="./services.html">求婚企劃</a></li>
+                            <li><a href="./services.html">抓週派對</a></li>
+                            <li><a href="./services.html">廠商推薦</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./emcee.html" class="active-now">Emcee Team</a></li>
+                </ul>
+        
+                <!-- 中間 Logo -->
+                <a href="./index.html">
+                    <img src="./images/Logo/logo_blcak.svg" alt="" class="nav-logo">
+                </a>
+        
+                <!-- 右邊 -->
+                <ul class="main-nav-right">    
+                    <li><a href="./moments.html">Moments</a></li>
+                    <li><a href="./stories-tips.html">Stories & Tips</a></li>
+                    <li>Contact Us
+                        <ul class="sub-nav">
+                            <li><a href="./contact-us.html">檔期詢問</a></li>
+                            <li><a href="./faq.html">常見問題</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
     
-            <!-- 中間 Logo -->
+                <!-- 新增隱藏搜尋框 -->
+                <!-- <div class="search-container">
+                    <input type="text" class="search-input" placeholder="婚禮方案、主持人、關於我們...">
+                    <span class="cancel-bar1"></span>
+                    <span class="cancel-bar2"></span>
+                </div> -->
+            </div>
+
+            <!-- 漢堡選單 -->
+            <i class="fa-solid fa-bars" id="hamburgerBtn"></i>
+
+            <!-- 隱藏 logo -->
             <a href="./index.html">
-                <img src="./images/Logo/logo_blcak.svg" alt="" class="nav-logo">
+                <img src="./images/Logo/logo_blcak.svg" alt="" class="nav-logo-outer">
             </a>
-    
-            <!-- 右邊 -->
-            <ul class="main-nav-right">    
-                <li><a href="./moments.html">Moments</a></li>
-                <li><a href="./stories-tips.html">Stories & Tips</a></li>
-                <li>Contact Us
-                    <ul class="sub-nav">
-                        <li><a href="./contact-us.html">檔期詢問</a></li>
-                        <li><a href="./faq.html">常見問題</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
-    
-            <!-- 新增隱藏搜尋框 -->
-            <!-- <div class="search-container">
-                <input type="text" class="search-input" placeholder="婚禮方案、主持人、關於我們...">
-                <span class="cancel-bar1"></span>
-                <span class="cancel-bar2"></span>
-            </div> -->
             
         </div>
     </nav>
