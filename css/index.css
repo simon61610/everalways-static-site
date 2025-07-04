@@ -1,7 +1,7 @@
 /* -------------------- KV -------------------- */
 .banner {
     /* border: 1px solid red; */
-    height: 300px;
+    height: clamp(200px, calc(300/1200 * 100vw), 400px);
     background-image: url(../images/index_KV.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,7 +13,7 @@
 
 .banner-text-bg {
     /* border: 1px solid red; */
-    width: 400px;
+    width: clamp(200px, calc(400/1200 * 100vw), 400px);
     margin: 0 auto;
     padding: 40px;
     text-align: center;
@@ -99,8 +99,10 @@ main .wrapper > div:first-child {
 }
 
 main .wrapper > div:first-child img{
-    width: 760px;
-    height: 480px;
+    max-width: 760px;
+    width: 100%;
+    max-height: 480px;
+    height: 100%;
     flex-shrink: 0;
 }
 
@@ -132,6 +134,10 @@ main .wrapper > div:last-child img{
     height: 440px;
     flex-shrink: 0;
 
+    width: 100%;
+    height: auto;
+    max-width: 440px;
+    display: block;
 }
 
 main .wrapper > div:last-child .text{
@@ -257,6 +263,7 @@ main .wrapper > div:last-child .decorative-text::before {
     flex-direction: column;
     gap: 80px;
     justify-content: center;
+    padding: 0 24px;
 }
 
 .host-and-partner .wrapper {
@@ -300,7 +307,7 @@ main .wrapper > div:last-child .decorative-text::before {
     background-color: var(--bdc-pink);
     padding: 16px;
     border-radius: 8px;
-    width: 280px;
+    width: calc(280/1200*100vw);
 
     display: flex;
     flex-direction: column;
@@ -316,8 +323,10 @@ main .wrapper > div:last-child .decorative-text::before {
 }
 
 .card > div .card-img {
-    width: 280px;
-    height: 280px;
+    width: calc(280/1200*100vw);
+    min-width: 120px;
+    height: calc(280/1200*100vw);
+    min-height: 120px;
 }
 
 .card:first-child > div .card-img {
@@ -390,6 +399,7 @@ main .wrapper > div:last-child .decorative-text::before {
     /* border: 1px solid red; */
     max-width: var(--desk-width);
     margin: 0 auto;
+    padding: 24px;
     display: flex; /* h1 和 cases區 */
     flex-direction: column;
     align-items: center;
@@ -421,6 +431,9 @@ main .wrapper > div:last-child .decorative-text::before {
 .cases img{
     /* border: 1px solid yellow; */
     display:flex;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* -- hover -- */
@@ -520,8 +533,9 @@ main .wrapper > div:last-child .decorative-text::before {
 .blog-area {
     /* border: 1px solid red; */
     display: flex;
+    gap: 16px;
     width: 100%;
-    height: 524px;
+    height: calc(524/1200*100vw);
     justify-content: space-between;
 }
 
@@ -630,7 +644,6 @@ main .wrapper > div:last-child .decorative-text::before {
     width: 100px;
     background-color: var(--ftc-700);
 }
-
 
 
 /* -------------------- 預約按鈕 -------------------- */

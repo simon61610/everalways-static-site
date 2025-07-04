@@ -1,0 +1,28 @@
+.title{
+    border: 1px solid blue;
+    width: 40%;
+}
+
+.content{
+    border: 1px solid red;
+    width: 40%;
+    max-height: 0;
+    overflow: hidden;
+    /* opacity: 0; */
+    transition: all 0.5s ease;
+}
+
+.title:hover + .content{
+    max-height: 400px;
+    /* opacity: 1; */
+}
+.title:hover {
+    background-color: red;
+}
+
+.block{
+    display: block;
+    width: 400px;
+    height: 400px;
+    background-color: green;
+}

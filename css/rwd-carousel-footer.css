@@ -1,0 +1,13 @@
+@media screen and (max-width: 821px) {
+    .partner-carousel {
+        margin-top: 40px;
+    }
+
+
+    footer .wrapper > p {
+        font-size: 12px;
+    }
+    footer .text-area h2 {
+        font-size: 12px;
+    }
+}

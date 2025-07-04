@@ -1,0 +1,149 @@
+@media screen and (max-width: 821px) {
+
+    /* -------------------- KV -------------------- */
+    .banner {}
+    
+    .banner-text-bg {
+        padding: 20px;
+        width: 320px;
+    }
+    
+    .banner-text-bg > p:first-child {
+        font-size: 28px;
+    }
+    .banner-text-bg > p:last-child {
+        font-size: 16px;
+    }
+
+
+    /* -------------------- Main -------------------- */
+    main .wrapper {
+        height: auto;
+    }
+
+    main > h1 {
+        font-size: 28px;
+        margin: 40px 0 28px 0;
+    }
+
+    main .wrapper > div:first-child {
+        position: static;
+        gap: 52px;
+    }
+
+    main .wrapper > div:first-child img {
+        width: 50%;
+        display: block;
+    }
+    main .wrapper > div:first-child .text {
+        padding-top: 0;
+        font-size: 16px;
+    }
+
+    main .wrapper > div:last-child {
+        display: none;
+    }
+
+    
+
+
+
+    /* -------------------- 婚禮企劃服務 -------------------- */
+    .services {
+        margin-top: 52px;
+    }
+    .services .filter {
+        gap: 32px;
+        padding: 32px 24px;
+    }
+    .services .filter div h1 {
+        font-size: 28px;
+        /* text-align: left; */
+    }
+    .services .filter div p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    /* -------------------- 婚禮我來辦 -------------------- */
+    .host-and-partner {
+        margin-top: 52px;
+    }
+    .host-and-partner .wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+    .host-and-partner .wrapper .introduce {
+        align-self: flex-start;
+        width: auto;
+    }
+    
+    .host-and-partner .wrapper .introduce h1 {
+        font-size: 32px;
+    }
+    .host-and-partner .wrapper .introduce p {
+
+    }
+    .host-and-partner .wrapper .card-area {
+        gap: 28px;
+    }
+    .card {
+        width: 40vw;
+    }
+    .card > div .card-img {
+        width: 100%;
+    }
+
+    /* .host-and-partner .wrapper .card-area {
+        gap: 32px;
+        flex-direction: column;
+    }
+    .card {
+        width: auto;
+        padding: 12px;
+    }
+    .card > div {
+        flex-direction: row;
+    }
+    .card > div .card-img {
+        flex-shrink: 0;
+    }
+    .card a {
+        align-self: center;
+    } */
+
+    /* -------------------- Their Story -------------------- */
+    .wedding-cases {
+        margin-top: 20px;
+    }
+
+    .wedding-cases .wrapper h1 {
+        font-size: 32px;
+    }
+
+    .cases-top a:nth-child(3) {
+        display: none;
+    }
+    
+    .cases-bottom a:nth-child(3) {
+        display: none;
+    }
+
+    /* -------------------- 婚禮大小事 -------------------- */
+    .blog-intro {
+        margin-top: 32px; 
+    }
+    /* .blog-area a div {
+        width: 100px;
+        height: 100px;
+    }
+   .blog-area a div {
+        display: none;
+    } */
+
+    /* ----------------------- 預約按鈕 ----------------------- */
+    .cta-area {
+        margin-top: 40px;
+    }
+}
