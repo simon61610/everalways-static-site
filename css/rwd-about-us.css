@@ -1,4 +1,11 @@
 @media screen and (max-width: 821px) {
+    /* -------------------- 理念 & 特色 -------------------- */
+    main {
+        margin-top: 100px;
+    }
+    main .wrapper {
+        gap: 40px;
+    }
     .about-mission .pic1 {
         max-width: 240px;
     }
@@ -8,4 +15,92 @@
     .about-mission .text-area p {
         font-size: 14px;
     }
+    .about-features {
+        gap: 60px;
+    }
+    .about-features .pic2 {
+        max-width: 240px;
+    }
+    .about-features .text-area > div {
+        font-size: 14px;
+    }
+    /* -------------------- 雜誌 & 名人推薦 -------------------- */
+    .recommendation {
+        margin-top: 40px;
+    }
+    .recommendation .wrapper {
+        gap: 40px;
+    }
+    .recommendation .wrapper .media-area {
+        gap: 60px;
+    }
+    /* -------------------- 地址 -------------------- */
+    .address {
+        margin-top: 40px;
+    }
+    .address .wrapper .pic1 {
+        width: 200px;
+        height: 200px;
+    }
+    .address .wrapper .pic2 {
+        width: 150px;
+        height: 300px;
+    }
+    .text-icon div {
+        font-size: 14px;
+    }
+    .address .wrapper .text-area .btn a{
+        padding: 16px 0;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .for-mobile-none {
+        display: none;
+    }
+    /* -------------------- 理念 & 特色 -------------------- */
+    main .wrapper {
+        gap: 32px;
+    }
+    .about-mission {
+        gap: 30px;
+    }
+    .about-mission .text-area h1 {
+        font-size: 24px;
+    }
+    .about-mission .pic1 {
+        min-width: 120px;
+    }
+    .about-features .pic2 {
+        display: none;
+    }
+
+    /* -------------------- 雜誌 & 名人推薦 -------------------- */
+    .recommendation .wrapper h1 {
+        font-size: 24px;
+    }
+    .recommendation .wrapper .media-area {
+        gap: 36px;
+    }
+    .media-magazines h2, .media-celebrities h2 {
+        font-size: 16px;
+    }
+    .media-magazines .intro {
+        gap: 8px;
+    }
+    .media-celebrities .intro {
+        gap: 24px;
+    }
+    .media-celebrities .intro p {
+        font-size: 12px;
+    }
+    
+
+    .address .wrapper .pic1, .address .wrapper .pic2 {
+        display: none;
+    }
+    .address .wrapper .text-area {
+        gap: 20px;
+    }
+
 }
