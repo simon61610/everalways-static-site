@@ -151,8 +151,126 @@
 @media screen and (max-width: 431px) {
 
     /* -------------------- Main -------------------- */
-    /* main > h1 {
+    main > h1 {
         font-size: 18px;
         margin: 40px 16px 20px;
-    } */
+    }
+    main .wrapper > div {
+        flex-direction: column-reverse;
+        /* text-align: center; */
+    }
+    .top-content {
+        gap: 20px;
+    }
+    .top-content .text {
+        font-size: 12px;
+        max-width: 70vw;
+    }
+    .top-content img {
+        display: none;
+    }
+
+    /* -------------------- 婚禮企劃服務 -------------------- */
+    .services {
+        margin-top: 40px;
+    }
+    .services .filter {
+        padding: 24px 16px;
+        gap: 20px;
+    }
+
+    .services .filter div h1 {
+        font-size: 24px;
+    }
+    .services .filter div {
+        gap: 16px;
+    }
+    .services .filter div p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .services .filter a {
+        padding: 12px;
+        width: 120px;
+        font-size: 14px;
+    }
+
+    /* -------------------- 婚禮我來辦 -------------------- */
+    .host-and-partner {
+        margin-top: 40px;
+        gap: 32px;
+    }
+    .host-and-partner .wrapper .introduce {
+        gap: 20px;
+    }
+    .host-and-partner .wrapper .introduce h1 {
+        font-size: 24px;
+    }
+    .host-and-partner .wrapper .introduce p {
+        font-size: 12px;
+    }
+    .host-and-partner .wrapper .card-area {
+        width: 100%;
+    }
+    .card > div .card-text h2 {
+        font-size: 16px;
+    }
+    .card > div .card-text p {
+        font-size: 12px;
+    }
+    /* -------------------- Their Story -------------------- */
+    .wedding-cases .wrapper {
+        gap: 28px;
+    }
+    .wedding-cases .wrapper h1 {
+        font-size: 24px;
+    }
+    .cases h2 {
+        font-size: 16px;
+    }
+    /* -------------------- 婚禮大小事 -------------------- */
+    .blog-intro {
+        margin-top: 0px;
+    }
+    .blog-intro .wrapper {
+        gap: 20px;
+        overflow: hidden;
+    }
+    .blog-text h1 {
+        font-size: 24px;
+    }
+    .blog-text p {
+        font-size: 12px;
+    }
+    .blog-area p {
+        font-size: 14px;
+    }
+    .blog-area a{
+        flex-shrink: 0;
+    }
+    .blog-area a:nth-child(odd) {
+        height: 100%;
+        width: 100%;
+    }
+    .blog-intro .wrapper > a {
+        font-size: 14px;
+    }
+    /* -------------------- 預約按鈕 -------------------- */
+    .cta-area {
+        margin-top: 0px;
+    }
+    .cta-area .wrapper {
+        gap: 8px;
+    }
+
+    .cta-area .wrapper h1 {
+        padding: 16px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.6;
+    }
+    .cta-area .wrapper div {
+        padding-bottom: 0;
+    }
+    
 }
