@@ -26,16 +26,16 @@
         margin: 40px 0 28px 0;
     }
 
-    main .wrapper > div:first-child {
+    .top-content {
         position: static;
         gap: 52px;
     }
 
-    main .wrapper > div:first-child img {
+    .top-content img {
         width: 50%;
         display: block;
     }
-    main .wrapper > div:first-child .text {
+    .top-content .text {
         padding-top: 0;
         font-size: 16px;
     }
@@ -146,4 +146,13 @@
     .cta-area {
         margin-top: 40px;
     }
+}
+
+@media screen and (max-width: 431px) {
+
+    /* -------------------- Main -------------------- */
+    /* main > h1 {
+        font-size: 18px;
+        margin: 40px 16px 20px;
+    } */
 }
