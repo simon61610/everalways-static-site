@@ -20,9 +20,9 @@ main .wrapper > div{
 /* - 理念 - */
 .about-mission {
     display: flex;
-    gap: 180px;
-    justify-content: flex-end;
-    padding-left: 80px;
+    justify-content: space-between; /* 改成 space-between 或 flex-start */
+    align-items: center;
+     gap: 60px;
 }
 
 .about-mission .text-area {
@@ -47,13 +47,10 @@ main .wrapper > div{
 }
 
 .about-mission .pic1 {
-    background-image: url(../images/about-us_main_pic1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 680px;
-    width: 460px;
-    flex-shrink: 0;
+    height: auto;
+    max-width: 460px;
+    width: 100%;
+    display: block;
 }
 
 /* - 特色 - */
