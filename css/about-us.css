@@ -22,7 +22,8 @@ main .wrapper > div{
     display: flex;
     justify-content: space-between; /* 改成 space-between 或 flex-start */
     align-items: center;
-     gap: 60px;
+    gap: 60px;
+    padding: 24px;
 }
 
 .about-mission .text-area {
