@@ -3,6 +3,7 @@
     max-width: var(--desk-width);
     margin: 140px auto 60px;
     /* border: 1px solid red; */
+    padding: 24px;
 }
 
 .wrapper-title p {
@@ -37,6 +38,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 24px;
 }
 
 .left-side {
