@@ -111,6 +111,7 @@ main .wrapper {
     max-width: var(--desk-width);
     margin: 0 auto;
     /* border: 1px solid red; */
+    padding: 0 24px;
 }
 
 .service-block {
@@ -185,8 +186,10 @@ main .wrapper {
 
 /* --- 圖片 --- */
 .service-block .pic {
-    width: 380px;
-    height: 380px;
+    max-width: 380px;
+    width: calc(380/1200*100vw);
+    max-height: 380px;
+    height: calc(380/1200*100vw);
     border-radius: 50%;
     /* border: 1px solid green; */
     flex-shrink: 0;
@@ -282,6 +285,8 @@ main .wrapper {
 
     height: 228px;
     box-sizing: border-box;
+
+    order: 1;
 }
 
 .plan-title h2 {
@@ -306,6 +311,8 @@ main .wrapper {
     display: flex;
     flex-direction: column;
     gap: 24px;
+
+    order: 3;
 }
 
 .plan-items p {
@@ -323,6 +330,8 @@ main .wrapper {
     font-size: var(--H3-size);
     font-weight: bold;
     color: var(--ftc-700);
+
+    order: 2;
 }
 
 /* --- V & X icon color --- */
