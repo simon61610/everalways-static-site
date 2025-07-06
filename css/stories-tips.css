@@ -373,6 +373,7 @@ article a {
 
     color: var(--ftc-black);
     margin-right: 12px;
+    margin-bottom: 12px;
 
     box-shadow: 0 0 14px hsl(0, 0%, 0%, .13);
 }
@@ -407,6 +408,12 @@ article a {
 
 .subscribe-box > form button:hover {
     background-color: hsl(145, 54%, 70%);
+}
+
+/* JS 控制的出現文字 */
+.feedback {
+    color: var(--bdc-pink);
+    font-size: var(--H6-size);
 }
 
 

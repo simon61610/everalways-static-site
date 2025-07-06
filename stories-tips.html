@@ -28,6 +28,7 @@
     <!-- js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
     <script src="./js/navSearch.js"></script>
+    <script src="./js/stories-tips.js"></script>
 </head>
 
 
@@ -221,9 +222,10 @@
 
             <section class="subscribe-box">
                 <p><i class="fa-solid fa-lightbulb"></i>訂閱我們，掌握最新婚禮靈感！</p>
-                <form action="">
+                <form action=""  id="submit">
                     <input type="email" placeholder="留下您的 Email" required>
                     <button type="submit">送出</button>
+                    <div id="feedback" class="feedback"></div>
                 </form>
             </section>
 
