@@ -58,7 +58,7 @@ $(document).ready(function(){
         console.log(myScrollHeight)
     }) */
     
-    // 按鈕淡出出現
+    // 按鈕淡入出現
     $(window).scroll(function(){
         let myScrollHeight = parseInt($(window).scrollTop())
         if(myScrollHeight > 400){

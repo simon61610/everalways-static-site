@@ -228,6 +228,30 @@ main .wrapper > div {
     text-decoration: none;
     width: 160px;
     padding: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.services .filter a span {
+    position: relative;
+    z-index: 2;
+}
+
+.services .filter a::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: var(--bdc-pink);
+    z-index: 1;
+    border-radius: 999px;
+
+    transition: all .4s ease;
+}
+.services .filter a:hover::after {
+    left: 0;
 }
 
 
@@ -780,6 +804,7 @@ main .wrapper > div {
 
 .cta-area .wrapper a:hover::after {
     width: 100%;
+    /* background-color: var(--bdc-pink); */
 }
 
 .cta-area .wrapper a:hover span {
