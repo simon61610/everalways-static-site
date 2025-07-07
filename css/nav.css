@@ -431,3 +431,35 @@ li.active-now, li > a.active-now, .sub-nav li > a.active-now{
 .main-nav > ul > li:hover {
     scale: 1.05;
 }
+
+
+
+/* -------------------- 回到頂部的按鈕 -------------------- */
+
+#backToTop {
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    font-size: 20px;
+    width: 48px;
+    height: 48px;
+    background-color: var(--bdc-green);
+    color: var(--bdc-white);
+    border-radius: 50%;
+
+    position: fixed;
+    bottom: 40px;
+    right: 24px;
+
+    cursor: pointer;
+
+    box-shadow: 1px 1px 14px hsla(0, 0%, 0%, .2);
+
+    /* 改用 JS 寫不然會有問題 */
+    /* transition: all .5S; */
+    /* transform: translateY(0); */
+}
+
+#backToTop:hover {
+    /* transform: translateY(-15%); */
+}

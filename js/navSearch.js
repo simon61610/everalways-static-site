@@ -48,4 +48,38 @@ $(document).ready(function(){
             $('#mainNav').css('right', '-100%')
         }
     })
+
+    // ----------------- 頂部按鈕功能 -----------------
+    $('#backToTop').hide()
+    
+    // 滑動的高度
+    /* $(window).scroll(function(){
+        myScrollHeight = parseInt($(window).scrollTop())
+        console.log(myScrollHeight)
+    }) */
+    
+    // 按鈕淡出出現
+    $(window).scroll(function(){
+        let myScrollHeight = parseInt($(window).scrollTop())
+        if(myScrollHeight > 400){
+            $('#backToTop').fadeIn()
+        }else{
+            $('#backToTop').fadeOut()
+        }
+    })
+
+    // 滑上去後按鈕會向上動
+    $('#backToTop').mouseenter(function(){
+        $(this).stop().animate({bottom: '44px'}, 300)
+    }).mouseleave(function(){
+        $(this).stop().animate({bottom: '40px'}, 300)
+    })
+
+    // 點擊後滑動到頂部
+    $('#backToTop').click(function(){
+        // $(window).scrollTop(0)
+        
+        $('html').animate({scrollTop: 0}, 'slow')
+    })
+    
 })
