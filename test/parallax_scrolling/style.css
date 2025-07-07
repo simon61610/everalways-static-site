@@ -1,0 +1,19 @@
+.block {
+    height: 1000px;
+    border: 1px solid red;
+}
+
+
+
+.parallax-container {
+    overflow: hidden;
+    height: 500px;
+    position: relative;
+}
+.parallax-img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.1s ease-out;
+}
