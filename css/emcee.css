@@ -93,10 +93,15 @@
 .emcee-filter form {
     display: flex;
     flex-direction: column;
+    gap: 20px;
     /* width: 60%;; */
 }
+.select-block {
+    display: flex;
+    flex-direction: column;
+}
 
-.emcee-filter form h3 {
+.select-block h3 {
     color: var(--bdc-pink);
     font-weight: bold;
     font-size: var(--H5-size);
@@ -104,7 +109,7 @@
     margin-bottom: 12px;
 }
 
-.emcee-filter form label, .emcee-filter form select {
+.select-block label, .select-block select {
     color: var(--ftc-700);
     font-size: var(--H6-size);
     font-family: var(--chinese-font);

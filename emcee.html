@@ -123,32 +123,37 @@
         <div class="left-side">
             <aside class="emcee-filter">
                 <form action="">
-                    <h3>主持風格</h3>
-                    <label for="style-all"><input type="checkbox" id="style-all" name="style[]" value="全選"> 全選</label>
-                    <label for="style-warm"><input type="checkbox" id="style-warm" name="style[]" value="溫馨感性"> 溫馨感性</label>
-                    <label for="style-funny"><input type="checkbox" id="style-funny" name="style[]" value="活潑幽默"> 活潑幽默</label>
-                    <label for="style-formal"><input type="checkbox" id="style-formal" name="style[]" value="隆重儀式"> 隆重儀式</label>
-                    <label for="style-casual" class="bottom"><input type="checkbox" id="style-casual" name="style[]" value="自然輕鬆"> 自然輕鬆</label>
-
-                    <h3>語言能力</h3>
-                    <label for="lang-all"><input type="checkbox" id="lang-all" name="lang[]" value="全選"> 全選</label>
-                    <label for="lang-chinese"><input type="checkbox" id="lang-chinese" name="lang[]" value="中文"> 中文</label>
-                    <label for="lang-bilingual"><input type="checkbox" id="lang-bilingual" name="lang[]" value="中英雙語"> 中英雙語</label>
-                    <label for="lang-taiwanese"><input type="checkbox" id="lang-taiwanese" name="lang[]" value="台語"> 台語</label>
-                    <label for="lang-hakka" class="bottom"><input type="checkbox" id="lang-hakka" name="lang[]" value="客語"> 客語</label>
-
-                    <h3>男 / 女主持人</h3>
-                    <label for="gender-any"><input type="radio" id="gender-any" name="gender" value="不限"> 不限</label>
-                    <label for="gender-male"><input type="radio" id="gender-male" name="gender" value="男主持人"> 男主持人</label>
-                    <label for="gender-female" class="bottom"><input type="radio" id="gender-female" name="gender" value="女主持人"> 女主持人</label>
-
-                    <h3>場次經驗</h3>
-                    <select name="experience" id="experience">
-                        <option value="">不限</option>
-                        <option value="below-50">50 場以下</option>
-                        <option value="50-100">50 至 100 場</option>
-                        <option value="above-100">100 場以上</option>
-                    </select>
+                    <div class="select-block">
+                        <h3>主持風格</h3>
+                        <label for="style-all"><input type="checkbox" id="style-all" name="style[]" value="全選"> 全選</label>
+                        <label for="style-warm"><input type="checkbox" id="style-warm" name="style[]" value="溫馨感性"> 溫馨感性</label>
+                        <label for="style-funny"><input type="checkbox" id="style-funny" name="style[]" value="活潑幽默"> 活潑幽默</label>
+                        <label for="style-formal"><input type="checkbox" id="style-formal" name="style[]" value="隆重儀式"> 隆重儀式</label>
+                        <label for="style-casual" class="bottom"><input type="checkbox" id="style-casual" name="style[]" value="自然輕鬆"> 自然輕鬆</label>
+                    </div>
+                    <div class="select-block">
+                        <h3>語言能力</h3>
+                        <label for="lang-all"><input type="checkbox" id="lang-all" name="lang[]" value="全選"> 全選</label>
+                        <label for="lang-chinese"><input type="checkbox" id="lang-chinese" name="lang[]" value="中文"> 中文</label>
+                        <label for="lang-bilingual"><input type="checkbox" id="lang-bilingual" name="lang[]" value="中英雙語"> 中英雙語</label>
+                        <label for="lang-taiwanese"><input type="checkbox" id="lang-taiwanese" name="lang[]" value="台語"> 台語</label>
+                        <label for="lang-hakka" class="bottom"><input type="checkbox" id="lang-hakka" name="lang[]" value="客語"> 客語</label>
+                    </div>
+                    <div class="select-block">
+                        <h3>男 / 女主持人</h3>
+                        <label for="gender-any"><input type="radio" id="gender-any" name="gender" value="不限"> 不限</label>
+                        <label for="gender-male"><input type="radio" id="gender-male" name="gender" value="男主持人"> 男主持人</label>
+                        <label for="gender-female" class="bottom"><input type="radio" id="gender-female" name="gender" value="女主持人"> 女主持人</label>
+                    </div>
+                    <div class="select-block">
+                        <h3>場次經驗</h3>
+                        <select name="experience" id="experience">
+                            <option value="">不限</option>
+                            <option value="below-50">50 場以下</option>
+                            <option value="50-100">50 至 100 場</option>
+                            <option value="above-100">100 場以上</option>
+                        </select>
+                    </div>
                 </form>
             </aside>
         </div>
