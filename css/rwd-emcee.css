@@ -1,0 +1,71 @@
+@media screen and (max-width: 431px) {
+    .banner {
+        height: 160px;
+    }
+    .banner-text-area {
+        gap: 16px;
+    }
+    .banner-text-area h1 {
+        font-size: 24px;
+    }
+    .banner-text-area p {
+        font-size: 10px;
+    }
+    .banner-text-area h2 {
+        font-size: 14px;
+    }
+
+
+    .wrapper-grid {
+        gap: 0px;
+        flex-direction: column;
+    }
+    .emcee-filter form h3 {
+        font-size: 16px;
+    }
+    .emcee-filter form label, .emcee-filter form select {
+        font-size: 14px;
+    }
+
+
+    .emcee-cards-block {
+        display: block;
+    }
+    .emcee-card {
+        display: flex;
+        gap: 12px;
+        width: 100%;
+    }
+    .emcee-card img {
+        width: 160px;
+    }
+    .emcee-card .eng-name {
+        font-size: 24px;
+        right: 0;
+        left: 80px;
+        bottom: 20px;
+    }
+    .emcee-card-text {
+        position: static;
+    }
+
+    .emcee-card-text h4 {
+        margin-bottom: 12px;
+        font-size: 18px;
+    }
+    .emcee-card-text > p {
+        margin-bottom: 16px;
+        font-size: 12px;
+    }
+    .emcee-card-text .tags {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        row-gap: 12px;
+        column-gap: 8px;
+    }
+
+    .emcee-filter form {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
