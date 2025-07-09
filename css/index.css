@@ -174,7 +174,7 @@ main .wrapper > div {
     background-position: center center;
     background-attachment: fixed;
 
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 .services .filter {
@@ -263,10 +263,10 @@ main .wrapper > div {
 /* --- 文字 + 卡片區 --- */
 .host-and-partner {
     /* border: 1px solid red; */
-    margin-top: 120px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 60px;
     justify-content: center;
     padding: 0 24px;
 }
@@ -396,7 +396,7 @@ main .wrapper > div {
 /* -------------------- Their Story -------------------- */
 
 .wedding-cases {
-    margin-top: 80px;
+    margin-top: 40px;
     text-align: center;
 }
 
@@ -501,7 +501,7 @@ main .wrapper > div {
 
 /* -------------------- 婚禮大小事 -------------------- */
 .blog-intro {
-    margin-top: 126px;
+    margin-top: 20px;
 }
 
 .blog-intro .wrapper {
@@ -518,7 +518,7 @@ main .wrapper > div {
 .blog-text {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
 }
 
 .blog-text h1 {
@@ -654,7 +654,7 @@ main .wrapper > div {
 /* -------------------- 預約按鈕 -------------------- */
 
 .cta-area {
-    margin-top: 120px;
+    margin-top: 40px;
 }
 
 .cta-area .wrapper {

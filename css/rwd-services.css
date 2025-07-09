@@ -3,6 +3,9 @@
     .banner {
         height: auto;
     }
+    .banner::after {
+        background-attachment: local;
+    }
     .banner .wrapper {
         justify-content: flex-start;
         gap: 60px;
@@ -22,6 +25,7 @@
     /* -------------------- 服務介紹 -------------------- */
     main .wrapper {
         margin-top: 20px;
+        flex-direction: column;
     }
     .service-block {
         padding: 40px;
@@ -35,9 +39,16 @@
     .title-text h2 {
         font-size: 20px;
     }
+    .service-block .text-area {
+        margin-bottom: 40px;
+    }
     .service-block .text-area a {
         padding: 12px 16px;
         font-size: 14px;
+    }
+
+    .service-block:nth-child(3) .pic {
+        background-position: right -150px;
     }
     /* -------------------- 方案價格與細項 -------------------- */
     .plan {
@@ -64,7 +75,7 @@
         gap: 32px;
     }
     .banner-text-area h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .banner-btn-area {
@@ -125,19 +136,30 @@
         font-size: 28px;
     }
     .plan-card {
-        gap: 28px;
+        gap: 20px;
+        width: 280px;
     }
     .plan-title {
-        padding: 28px;
+        padding: 20px;
         height: auto;
     }
     .plan-title h2 {
-        font-size: 24px;
+        font-size: 20px;
+        margin-bottom: 12px;
     }
     .plan-title p {
-        font-size: 18px;
+        font-size: 16px;
     }
     .plan-price {
-        font-size: 24px;
+        font-size: 20px;
     }
+    .plan-items {
+        gap: 12px;
+        padding: 0;
+        height: auto;
+    }
+    .plan-items p {
+        font-size: 14px;
+    }
+    
 }

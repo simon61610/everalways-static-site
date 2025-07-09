@@ -74,6 +74,10 @@
     .about-features .pic2 {
         display: none;
     }
+    .about-features .text-area {
+        /* text-align: center; */
+        gap: 6px;
+    }
 
     /* -------------------- 雜誌 & 名人推薦 -------------------- */
     .recommendation .wrapper h1 {
@@ -95,12 +99,17 @@
         font-size: 12px;
     }
     
-
+    /* -------------------- 地址 -------------------- */
     .address .wrapper .pic1, .address .wrapper .pic2 {
         display: none;
     }
     .address .wrapper .text-area {
         gap: 20px;
+    }
+    .address .wrapper .text-area .btn a {
+        font-size: 14px;
+        width: 120px;
+        padding: 12px 8px;
     }
 
 }

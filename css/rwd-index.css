@@ -51,6 +51,7 @@
     /* -------------------- 婚禮企劃服務 -------------------- */
     .services {
         margin-top: 52px;
+        background-attachment: local;
     }
     .services .filter {
         gap: 32px;
@@ -181,24 +182,29 @@
 
     .services .filter div h1 {
         font-size: 24px;
+        text-align: left;
     }
     .services .filter div {
         gap: 16px;
     }
     .services .filter div p {
         font-size: 12px;
-        text-align: center;
+        /* text-align: center; */
     }
     .services .filter a {
         padding: 12px;
         width: 120px;
-        font-size: 14px;
+        font-size: 12px;
+        width: 100px;
     }
 
     /* -------------------- 婚禮我來辦 -------------------- */
     .host-and-partner {
         margin-top: 40px;
         gap: 32px;
+    }
+    .host-and-partner .wrapper {
+        gap: 20px;
     }
     .host-and-partner .wrapper .introduce {
         gap: 20px;
@@ -212,11 +218,17 @@
     .host-and-partner .wrapper .card-area {
         width: 100%;
     }
+    .card {
+        padding: 12px;
+    }
     .card > div .card-text h2 {
         font-size: 16px;
     }
     .card > div .card-text p {
         font-size: 12px;
+    }
+    .card > div .card-img {
+        border-radius: 10px;
     }
     /* -------------------- Their Story -------------------- */
     .wedding-cases .wrapper {
@@ -271,6 +283,18 @@
     }
     .cta-area .wrapper div {
         padding-bottom: 0;
+    }
+    .cta-area .wrapper a {
+        font-size: 14px;
+        color: white;
+        padding: 4px 16px 4px 16px;
+        text-align: center;
+    }
+    .cta-area .wrapper a::after {
+        width: 100%;
+    }
+    .cta-area .wrapper a::before {
+        display: none;
     }
     
 }

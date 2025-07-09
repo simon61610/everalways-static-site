@@ -75,6 +75,11 @@ main .wrapper > div{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: 12px;
+}
+.about-features .text-area i {
+    font-size: 24px;
+    margin-right: 8px;
 }
 
 .about-features .text-area > div {
@@ -109,7 +114,7 @@ main .wrapper > div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
+    gap: 48px;
     /* border: 1px solid red; */
     padding: 0 24px;
 }
@@ -212,7 +217,7 @@ main .wrapper > div{
 /* -------------------- 地址 -------------------- */
 
 .address {
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .address .wrapper {

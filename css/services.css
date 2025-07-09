@@ -314,8 +314,6 @@ main .wrapper {
     background-color: var(--bdc-green);
     padding: 40px;
     border-radius: 32px 32px 0 0;
-
-    height: 228px;
     box-sizing: border-box;
 
     order: 1;

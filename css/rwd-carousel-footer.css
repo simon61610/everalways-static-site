@@ -11,3 +11,41 @@
         font-size: 12px;
     }
 }
+
+@media screen and (max-width: 431px) {
+    .partner-carousel .wrapper {
+        gap: 20px;
+    }
+    .partner-carousel .par-logo {
+        gap: 20px;
+    }
+    .carousel img {
+        width: 80px;
+        margin-right: 20px;
+    }
+    
+    footer {
+        margin-top: 20px;
+    }
+    footer .wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+        padding: 16px 0;
+    }
+    footer .social-icon i {
+        font-size: 28px;
+        margin-top: 12px;
+    }
+    footer .wrapper > p {
+        margin-top: 10px;
+        font-size: 10px;
+        order: 3;
+    }
+    footer .text-area {
+        order: 2;
+    }
+    footer .wrapper .img-block {
+        order: 1;
+    }
+}
