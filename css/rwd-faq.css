@@ -1,0 +1,38 @@
+@media screen and (max-width: 431px) {
+    .banner {
+        height: auto;
+    }
+    .banner .wrapper {
+        gap: 20px;
+        padding: 24px;
+    }
+    .banner .wrapper h1 {
+        font-size: 28px;
+    }
+    .banner .wrapper .tags {
+        gap: 20px;
+    }
+    .banner .wrapper p {
+        padding: 12px;
+    }
+
+    .faq .wrapper {
+        gap: 20px;
+    }
+    .faq-block h2 {
+        font-size: 20px;
+    }
+    .question {
+        font-size: 16px;
+    }
+    .question::after {
+        width: 6px;
+        height: 6px;
+    }
+    .ans {
+        padding: 16px;
+    }
+    .ans p {
+        font-size: 14px;
+    }
+}
