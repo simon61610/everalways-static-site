@@ -4,7 +4,7 @@
         height: auto;
     }
     .banner::after {
-        background-attachment: local;
+        background-attachment: scroll;
     }
     .banner .wrapper {
         justify-content: flex-start;

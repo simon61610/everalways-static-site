@@ -51,7 +51,7 @@
     /* -------------------- 婚禮企劃服務 -------------------- */
     .services {
         margin-top: 52px;
-        background-attachment: local;
+        background-attachment: scroll;
     }
     .services .filter {
         gap: 32px;

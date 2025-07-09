@@ -3,7 +3,7 @@
         height: 180px;
     }
     .banner::after {
-        background-attachment: local;
+        background-attachment: scroll;
     }
     .banner-text-area {
         gap: 12px;

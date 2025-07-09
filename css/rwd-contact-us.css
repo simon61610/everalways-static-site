@@ -1,0 +1,25 @@
+@media screen and (max-width: 821px) {
+    .banner {
+        height: 180px;
+    }
+    .banner::after {
+        background-attachment: scroll;
+        background-position: center -20px;
+    }
+    .banner .wrapper h1 {
+        font-size: 28px;
+    }
+
+
+    .contact {
+        margin-top: 28px;
+    }
+    .contact .wrapper h2 {
+        font-size: 24px;
+        margin-bottom: 28px;
+    }
+    
+    .row {
+        flex-direction: column;
+    }
+}
