@@ -41,6 +41,7 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
+    padding: 0 24px;
 }
 
 .banner-text-area h1 {
@@ -77,6 +78,7 @@
     flex-direction: column;
     align-items: center;
     gap: 36px;
+    padding: 0 24px;
 }
 
 .wedding-gallery .wrapper > div {
@@ -138,7 +140,8 @@
 .gallery-item a {}
 
 .gallery-item img {
-    width: 300px;
+    /* width: 300px; */
+    width: 100%;
 }
 
 .gallery-item div {
@@ -379,6 +382,7 @@
     flex-direction: column;
     align-items: center;
     gap: 60px;
+    padding: 0 24px;
 }
 
 /* --- 標題文字 --- */
