@@ -9,9 +9,15 @@ nav {
 
 .main-nav-outer {
     height: 88px;
-    background-color: hsl(60, 100%, 99%, .7);
-    border: red;
+    background-color: hsl(60, 100%, 99%, 1);
+    /* border: red 1px solid; */
     position: relative;
+
+    transition: background-color .8s ease;
+}
+
+.nav-bgc-color-modify {
+    background-color: hsl(60, 100%, 99%, .7);
 }
 
 

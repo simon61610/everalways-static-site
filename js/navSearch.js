@@ -66,6 +66,13 @@ $(document).ready(function(){
         }else{
             $('#backToTop').fadeOut()
         }
+
+        // ----------------- 導覽列滑動超過指令高度後，背景色透明度調整 -----------------
+        if(myScrollHeight > 100) {
+            $('.main-nav-outer').addClass('nav-bgc-color-modify')
+        }else{
+            $('.main-nav-outer').removeClass('nav-bgc-color-modify')
+        }
     })
 
     // 滑上去後按鈕會向上動
