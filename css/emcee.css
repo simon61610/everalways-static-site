@@ -73,6 +73,7 @@
     margin: 60px auto;
     display: flex;
     gap: 60px;
+    padding: 0 24px;
     /* grid-template-columns: 1fr 1fr 1fr 1fr; */
 }
 
@@ -149,7 +150,7 @@
     font-size: var(--H2-size);
     color: var(--bdc-green);
     position: absolute;
-    bottom: 124px;
+    bottom: 136px;
     right: 16px;
     z-index: 2;
 
@@ -159,7 +160,7 @@
 
 .emcee-card-text {
     background-color: hsl(60, 100%, 99%, .9);
-    padding: 16px;
+    padding: 12px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -184,15 +185,16 @@
 .emcee-card-text .tags {
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 2px;
 }
 
 .emcee-card-text .tags p {
-    padding: 8px 8px;
+    padding: 4px 4px;
     background-color: var(--ftc-300);
     color: var(--bdc-white);
     font-family: var(--chinese-font);
     border-radius: 999px;
+    font-size: 12px;
 }
 
 .emcee-card:hover {
