@@ -51,7 +51,7 @@ $(document).ready(function(){
 
     // ----------------- 頂部按鈕功能 -----------------
     $('#backToTop').hide()
-    $('#chat-helper').hide()
+    $('#chatHelper').hide()
     
     // 滑動的高度
     /* $(window).scroll(function(){
@@ -64,10 +64,10 @@ $(document).ready(function(){
         let myScrollHeight = parseInt($(window).scrollTop())
         if(myScrollHeight > 200){
             $('#backToTop').fadeIn()
-            $('#chat-helper').fadeIn()
+            $('#chatHelper').fadeIn()
         }else{
             $('#backToTop').fadeOut()
-            $('#chat-helper').fadeOut()
+            $('#chatHelper').fadeOut()
         }
 
         // ----------------- 導覽列滑動超過指令高度後，背景色透明度調整 -----------------

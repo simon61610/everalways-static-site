@@ -440,7 +440,7 @@ li.active-now, li > a.active-now, .sub-nav li > a.active-now{
 
 
 
-/* -------------------- 回到頂部的按鈕 -------------------- */
+/* -------------------- 置頂按鈕 -------------------- */
 
 #backToTop {
     text-align: center;
@@ -470,7 +470,7 @@ li.active-now, li > a.active-now, .sub-nav li > a.active-now{
     /* transform: translateY(-15%); */
 }
 
-/* -------------------- 線上婚禮小助手 -------------------- */
+/* -------------------- 小幫手機器人 -------------------- */
 .chat-helper {
     /* border: 1px solid red; */
     /* background-color: var(--bdc-green);
@@ -503,5 +503,74 @@ li.active-now, li > a.active-now, .sub-nav li > a.active-now{
 
 .chat-helper:hover + .helper-talk {
     opacity: 1;
+}
+
+
+.lightbox-content {
+    /* border: 1px solid red; */
+    width: 50vw;
+}
+.chat-box {
+    border: 5px solid var(--bdc-pink);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    
+    background-color: var(--bdc-white);
+    border-radius: 8px;
+}
+.chat-box-content {
+    border: 1px solid #666;
+    background-color: var(--bdc-white);
+    padding: 12px;
+    height: 300px;
+
+    font-family: var(--chinese-font);
+    color: var(--ftc-black);
+    font-size: var(--p-size);
+    border-radius: 8px;
+}
+.chat-box-content div {
+    /* border: 1px solid red; */
+    text-align: center;
+    padding: 4px;
+    order: 2;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.chat-box-content img {
+    width: 28px;
+    height: auto;
+    display: inline-block;
+    padding: 8px;
+
+    background-color: var(--bdc-pink);
+    border-radius: 50%;
+
+}
+.chat-box-content p {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 8px;
+}
+.chat-box-textarea {
+    background-color: var(--bdc-white);
+    /* border: 1px solid darkgreen; */
+    resize: none;
+    padding: 8px;
+
+    font-family: var(--chinese-font);
+    color: var(--ftc-black);
+    font-size: var(--p-size);
+
+    border-radius: 8px;
+    
+}
+.chat-box-textarea:focus {
+    outline: 1px solid var(--ftc-300);
 }
 
