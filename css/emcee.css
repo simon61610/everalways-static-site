@@ -101,6 +101,10 @@
     flex-direction: column;
 }
 
+.select-block label {
+    cursor: pointer;
+}
+
 .select-block h3 {
     color: var(--bdc-pink);
     font-weight: bold;

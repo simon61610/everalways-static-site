@@ -91,5 +91,40 @@ $(document).ready(function(){
         
         $('html').animate({scrollTop: 0}, 'slow')
     })
+
+    // ----------------- 機器人對話框永遠置中 -----------------
+    function moveCenter(){
+
+        let divWidth = $('#lightboxContent').width()
+        let divHeight = $('#lightboxContent').height()
+        // alert(divHeight)
+        let winWidth = $(window).width()
+        let winHeight = $(window).height()
+
+        $('#lightboxContent').css({
+
+            left: (winWidth - divWidth) / 2,
+            top: (winHeight - divHeight) / 2
+        })
+    }
+
+    moveCenter()
+    $(window).on('resize scroll', function(){
+            moveCenter()
+        }) 
+    
+
+    // ----------------- 機器人對話開啟與關閉 -----------------
+    $('#chatHelper').click(function(){
+        $('#lightboxContent').fadeIn()
+        $('#lightboxMask').fadeIn()
+
+        $('.chat-box-textarea').focus()
+    })
+
+    $('#closeLightbox').click(function(){
+        $('#lightboxContent').fadeOut()
+        $('#lightboxMask').fadeOut()
+    })
     
 })

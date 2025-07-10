@@ -364,9 +364,27 @@
         </div>
     </footer>
 
-    <img src="./images/ai-robot.png" alt="" id="chat-helper" class="chat-helper">
+    <!-- -------------------- 置頂按鈕和小幫手機器人 -------------------- -->
+    <img src="./images/ai-robot.png" alt="" id="chatHelper" class="chat-helper">
     <img src="./images/ai-robot-chat.png" alt="" class="helper-talk">
     <button id="backToTop" title="回到頂部"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- 機器人對話框 -->
+
+    <div class="lightbox-mask" id="lightboxMask"></div>
+     
+    <div class="lightbox-content" id="lightboxContent">
+        <div class="chat-box">
+            <div class="chat-box-content">
+                <div>
+                    <img src="./images/ai-robot.png" alt="">
+                    <p>我是您的婚禮小幫手！</p>
+                </div>
+            </div>
+            <textarea name="" class="chat-box-textarea" placeholder="關於婚禮顧問，我想問..."></textarea>
+            <i class="fa-solid fa-xmark" id="closeLightbox"></i>
+        </div>
+    </div>
 
 </body>
 
