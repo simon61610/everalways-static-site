@@ -21,12 +21,19 @@
         align-items: center;
         gap: 16px;
 
-        cursor: pointer;
+        transition: right .5s ease;
+    }
+    .aside-click {
+        right: 0;
     }
     .category-aside h1 {
         writing-mode: vertical-lr;
         letter-spacing: 5px;
         margin-bottom: 0;
+        cursor: pointer;
+    }
+    .category-aside h1:hover{
+        color: #666;
     }
     .category-aside summary {
         margin: 8px 0;
@@ -107,5 +114,9 @@
         margin-right: 8px;
         margin-bottom: 8px;
         /* width: 100%; */
+    }
+
+    .aside-click {
+        right: 0;
     }
 }

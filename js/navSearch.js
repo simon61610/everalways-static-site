@@ -80,9 +80,9 @@ $(document).ready(function(){
 
     // 滑上去後按鈕會向上動
     $('#backToTop').mouseenter(function(){
-        $(this).stop().animate({bottom: '44px'}, 300)
+        $(this).stop(true).animate({bottom: '44px'}, 300)
     }).mouseleave(function(){
-        $(this).stop().animate({bottom: '40px'}, 300)
+        $(this).stop(true).animate({bottom: '40px'}, 300)
     })
 
     // 點擊後滑動到頂部
