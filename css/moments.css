@@ -126,7 +126,7 @@
 /* --- gallery-grid --- */
 .gallery-grid {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
 }
@@ -343,7 +343,7 @@
     color: var(--ftc-300);
 }
 
-.dots-area {
+.dot-button {
     display: flex;
     justify-content: center;
     gap: 12px;
@@ -351,6 +351,11 @@
 
 .dot {
     color: var(--ftc-300);
+    cursor: pointer;
+}
+
+.dot:hover {
+    color: var(--bdc-green);
 }
 
 .controls-area .active {
