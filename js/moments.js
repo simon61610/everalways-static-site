@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    
+
     const ITEMSPERPAGE = 9 // 每頁 9 筆
     let items = $('.gallery-item') // 複數是陣列，可以用陣列方法
 
@@ -15,7 +17,7 @@ $(document).ready(function(){
         // items.slice(0, 9).show()     // 第 1 頁 顯示     index 0  ~ 8 筆 => slice(0, 9)
         // items.slice(9, 17).show()    // 第 2 頁 顯示     index 9  ~ 17 筆 => slice(9, 18)
         // items.slice(19, 18).show()   // 第 3 頁 顯示     index 18 ~ 26 筆 => slice(18, 27)
-        items.slice(start, end).show()
+        items.slice(start, end).fadeIn(1000)
     }
 
     // 動態新增圓圈圈

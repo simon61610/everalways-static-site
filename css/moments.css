@@ -114,6 +114,8 @@
     font-size: var(--H4-size);
     color: var(--ftc-300);
     line-height: 2.8;
+
+    cursor: pointer;
 }
 
 /* 示意選擇中 */
