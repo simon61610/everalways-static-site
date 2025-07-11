@@ -176,7 +176,7 @@ article {
 
 article .article-card-img {
     width: 300px;
-    height: 200px;
+    aspect-ratio: 3 / 2;
 
     position: relative;
 

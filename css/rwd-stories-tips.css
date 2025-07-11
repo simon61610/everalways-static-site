@@ -1,0 +1,111 @@
+@media screen and (max-width: 821px){
+    .wrapper-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-side {
+        order: 1;
+    }
+    .right-side {
+        order: 2;
+        padding: 24px;
+    }
+    .category-aside {
+        padding: 20px;
+        position: fixed;
+        top: 100px;
+        left: auto;
+        right: -240px;
+        border-radius: 28px 0 0 28px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        cursor: pointer;
+    }
+    .category-aside h1 {
+        writing-mode: vertical-lr;
+        letter-spacing: 5px;
+        margin-bottom: 0;
+    }
+    .category-aside summary {
+        margin: 8px 0;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .wrapper-title {
+        margin: 120px auto 16px;
+    }
+    main {
+        padding: 0 24px;
+    }
+    .main-text-area .date {
+    }
+    .main-text-area h2 {
+        text-align: left;
+        font-size: 20px;
+    }
+    .main-text-area h3 {
+        font-size: 16px;
+        text-align: left;
+        margin-bottom: 8px
+    }
+    .main-text-area .editor {
+        margin-bottom: 20px;
+        text-align: right;
+    }
+    .main-text-area .content {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .article-list {
+        padding: 0 24px;
+    }
+    article {
+        padding: 0;
+    }
+    .article-card {
+        gap: 16px;
+    }
+    article .article-card-img {
+        width: 100%;
+    }
+    article .article-card-img h2 {
+        font-size: 14px;
+        padding: 8px;
+        bottom: 0px;
+    }
+    article .editor {
+        font-size: 10px;
+        text-align: left;
+    }
+    .category-aside {
+        padding: 16px 12px;
+        right: -190px;
+    }
+    .category-aside h1 {
+        font-size: 20px;
+    }
+    .category-aside summary {
+        font-size: 16px;
+    }
+    .category-aside li {
+        font-size: 14px;
+    }
+
+    .popular-posts {
+        order: 1;
+    }
+    .subscribe-box {
+        order: 2;
+    }
+
+    .subscribe-box > form input {
+        margin: 0;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        /* width: 100%; */
+    }
+}
