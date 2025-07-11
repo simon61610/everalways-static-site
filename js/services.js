@@ -22,6 +22,34 @@ $(document).ready(function(){
         $('html').animate({scrollTop: $('#planBlock').offset().top - $('.main-nav-outer').height() - 40}, 'slow')
     })
 
+    /* $('#fullWeddingBtn').click(function(){
+        $('#allWeddingCard').addClass('card-move')
+        $('#allWeddingCard .plan-title').addClass('title-bgc')
 
+        setTimeout(() => {
+            $('#allWeddingCard').removeClass('card-move')
+            $('#allWeddingCard .plan-title').removeClass('title-bgc')
+        }, 3000);
+    }) */
 
+    // 寫成 function
+    function cardAnimation(selector){
+        $(selector).addClass('card-move')
+        $(selector).find('.plan-title').addClass('title-bgc')
+
+        setTimeout(() => {
+            $(selector).removeClass('card-move')
+            $(selector).find('.plan-title').removeClass('title-bgc')
+        }, 2000);
+    }
+
+    $('#fullWeddingBtn').click(function(){
+        cardAnimation('#allWeddingCard')
+    })
+    $('#westernWeddingBtn').click(function(){
+        cardAnimation('#westernWeddingCard')
+    })
+    $('#tradWeddingBtn').click(function(){
+        cardAnimation('#chineseWeddingCard')
+    })
 })

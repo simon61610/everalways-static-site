@@ -307,7 +307,14 @@ main .wrapper {
     width: 380px;
     
     box-shadow: 0 0 14px hsla(0, 0%, 0%, .13);
+
+    transition: transform 1s .7s ease;
 }
+
+.card-move {
+    /* box-shadow: 0 0 14px hsl(145, 54%, 76%); */
+    transform: translateY(-5%);
+} /* js 新增 class 用 */
 
 /* - title - */
 .plan-title {
@@ -317,7 +324,14 @@ main .wrapper {
     box-sizing: border-box;
 
     order: 1;
+
+    transition: background-color 1s .7s ease;
 }
+
+.title-bgc {
+    background-color: hsl(145, 54%, 60%);
+
+} /* js 新增 class 用 */
 
 .plan-title h2 {
     font-size: 32px;
