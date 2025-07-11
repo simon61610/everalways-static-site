@@ -116,6 +116,10 @@
     line-height: 2.8;
 
     cursor: pointer;
+    transition: color .3s ease;
+}
+.category-tabs li:hover {
+    color: var(--bdc-pink);
 }
 
 /* 示意選擇中 */

@@ -1,0 +1,103 @@
+@media screen and (max-width: 821px) {
+    .wedding-gallery {
+        margin-top: 40px;
+    }
+    .wedding-gallery .wrapper {
+        gap: 24px;
+    }
+    .category-tabs ul {
+        gap: 24px;
+    }
+
+    .gallery-item p {
+        font-size: 16px;
+    }
+
+    .gallery-controls {
+        gap: 40px;
+    }
+
+    .feedback {
+        margin-top: 60px;
+    }
+    .header-text {
+        margin-bottom: 32px;
+    }
+    .header-text h2 {
+        font-size: 20px;
+    }
+    .header-text h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .header-text h1 .fa-comment {
+        font-size: 40px;
+    }
+    .header-text p {
+        font-size: 20px;
+    }
+    .feedback-items .number {
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+    .feedback-items .item {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
+    .feedback-cards {
+        flex-direction: column;
+    }
+    .card {
+        flex-basis: auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+
+@media screen and (max-width: 431px) {
+    .banner {
+        height: 180px;
+    }
+    .banner::after {
+        background-attachment: scroll;
+    }
+    .banner-text-area {
+        gap: 12px;
+    }
+    .banner-text-area h1 {
+        font-size: 28px;
+    }
+    .banner-text-area p {
+        font-size: 12px;
+    }
+    .banner-text-area h2 {
+        font-size: 14px;
+    }
+
+    .gallery-header h1 {
+        font-size: 28px;
+    }
+    .category-tabs ul {
+        gap: 16px;
+    }
+    .category-tabs li {
+        /* font-size: 12px; */
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr
+    }
+    .gallery-item p {
+        font-size: 24px;
+    }
+    .feedback-stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr
+    }
+    .header-text p {
+        font-size: 16px;
+    }
+}
