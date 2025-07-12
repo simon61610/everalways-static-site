@@ -37,6 +37,14 @@ $(document).ready(function(){
         isClose = !isClose
     })
 
+    // ----------------- 次選單點擊功能 -----------------
+    $('.nav-click').click(function(){
+        if(window.innerWidth <= 821){
+            $('.nav-click').not(this).find('ul').slideUp(300)
+            $(this).find('ul').slideToggle(300)
+        }
+    })
+
     // ----------------- 解決導覽列在螢幕寬度恢復後消失的問題 -----------------
     // 如果 window 的寬度超過斷點 1000px，那 right 就改回 0，讓導覽列出現在畫面上
     // 多新增一個調整 window 大小，小於1000px 會自動關掉的功能

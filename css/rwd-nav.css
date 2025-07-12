@@ -47,6 +47,7 @@
     .main-nav-left > li {
         flex-direction: column;
         /* border: 1px solid orange; */
+        cursor: pointer;
     }
 
     .main-nav-left .sub-nav {
@@ -64,6 +65,7 @@
     .main-nav-right > li {
         flex-direction: column;
         /* border: 1px solid orange; */
+        cursor: pointer;
     }
     .main-nav-right .sub-nav {
         position: static;
@@ -72,6 +74,12 @@
         border: none;
         /* border: 1px solid blue; */
         margin-top: 4px;
+        display: none;
+    }
+
+    /* JS 點擊，hover 取消 */
+    .main-nav-left > li:hover .sub-nav, 
+    .main-nav-right > li:hover .sub-nav {
         display: none;
     }
     
