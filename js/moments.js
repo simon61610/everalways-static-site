@@ -33,7 +33,7 @@ $(document).ready(function(){
         items.slice(start, end).fadeIn(1000)
     }
 
-        function showPageClick(page, type){
+    function showPageClick(page, type){
         let start = page * ITEMSPERPAGE
         let end = (page + 1 ) * ITEMSPERPAGE
         
