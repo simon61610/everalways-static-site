@@ -17,7 +17,7 @@ $(document).ready(function(){
         $('html').animate({scrollTop: $('#traditionalWeddingBlock').offset().top - $('.main-nav-outer').height()}, 'slow')
     })
 
-    // 點選後了解價格後，滑到方案細項和價格介紹
+    // 點選了解價格後，滑到方案細項和價格介紹
     $('.service-block a').click(function(){
         $('html').animate({scrollTop: $('#planBlock').offset().top - $('.main-nav-outer').height() - 40}, 'slow')
     })
