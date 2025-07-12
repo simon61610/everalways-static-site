@@ -259,128 +259,97 @@ main .wrapper > div {
 
 
 /* -------------------- 婚禮我來辦 -------------------- */
-
 /* --- 文字 + 卡片區 --- */
+
 .host-and-partner {
-    /* border: 1px solid red; */
     margin-top: 60px;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    justify-content: center;
-    padding: 0 24px;
+    display: block;
 }
 
 .host-and-partner .wrapper {
-    /* border: 1px solid blue; */
+    margin: 0 auto 60px;
+    padding: 0 24px;
     display: flex;
-    justify-content: center;
-    gap: 64px;
+    gap: 40px;
+    align-items: center;
+    max-width: 1200px;
 }
 
-/* - 文字 - */
-
-.host-and-partner .wrapper .introduce {
-    width: 340px;
+/* - 左半邊文字 - */
+.introduce {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 28px;
+    max-width: 480px;
 }
-
-.host-and-partner .wrapper .introduce h1 {
+.introduce h1 {
     font-family: var(--chinese-font);
     font-size: var(--H1-size);
     color: var(--ftc-black);
     font-weight: bold;
-    letter-spacing: 0.2em;
 }
-
-.host-and-partner .wrapper .introduce p {
+.introduce p {
     font-size: var(--H6-size);
     line-height: var(--line-height160);
     color: var(--ftc-700);
 }
 
-/* - 卡片 - */
-.host-and-partner .wrapper .card-area {
+/* 右半邊卡片 */
+.card-area {
     display: flex;
-    gap: 60px;
+    gap: 32px;
 }
-
 .card {
     background-color: var(--bdc-pink);
     padding: 16px;
     border-radius: 8px;
-    width: calc(280/1200*100vw);
-
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-
+    height: auto;
     box-shadow: 0px 0px 14px hsla(0, 0%, 0%, .25);
+    max-width: 280px;
 }
-
-.card > div {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
 }
-
-.card > div .card-img {
-    width: calc(280/1200*100vw);
-    min-width: 120px;
-    height: calc(280/1200*100vw);
-    min-height: 120px;
-}
-
-.card:first-child > div .card-img {
-    background-image: url(../images/index_host-and-partner_host.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.card:last-child > div .card-img {
-    background-image: url(../images/index_host-and-partner_partner.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-}
-
-.card > div .card-text {
+.card-text {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
-
-.card > div .card-text h2{
+.card-text h2 {
     font-family: var(--chinese-font);
     font-size: var(--H5-size);
     color: var(--bdc-white);
-    letter-spacing: 0.1em;
     font-weight: bold;
 }
-
-.card > div .card-text p{
+.card-text p {
     font-size: var(--p-size);
     color: var(--bdc-white);
     line-height: var(--line-height160);
+    
 }
 
 .card a {
     border: 1px solid var(--bdc-white);
+    display: block;
     color: var(--bdc-white);
     font-family: var(--eng-font);
-    text-align: center;
-    width: 84px;
-    border-radius: 8px;
-    display: block;
     text-decoration: none;
-    padding: 4px 0;
-    line-height: 1.6;
+
+    padding: 8px 16px;
     align-self: flex-end;
+
+    text-align: center;
+    font-size: 16px;
+
+    transition: all .5s ease;
+}
+.card a:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 14px hsla(0, 0%, 0%, .25);
+    background-color: var(--bdc-white);
+    color: var(--bdc-pink);
 }
 
 /* --- 水平線 --- */
