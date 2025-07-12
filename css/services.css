@@ -311,6 +311,10 @@ main .wrapper {
     transition: transform 1s .7s ease;
 }
 
+.plan-card:hover {
+    outline: 4px solid var(--bdc-green);
+}
+
 .card-move {
     /* box-shadow: 0 0 14px hsl(145, 54%, 76%); */
     transform: translateY(-5%);
