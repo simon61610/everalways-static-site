@@ -129,10 +129,16 @@
 .popular-posts ul {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
 }
 
-.popular-posts li {}
+.popular-posts li {
+    padding: 8px;
+}
+
+.popular-posts li:hover {
+    box-shadow: 0 0 14px hsl(0, 0%, 0%, .13);
+}
 
 .popular-posts a {
     display: flex;
