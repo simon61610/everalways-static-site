@@ -129,6 +129,10 @@
     padding: 8px 8px;
 }
 
+input:checked + span {
+    color: var(--bdc-pink);
+}
+
 
 /* ---------------- 主持人卡片區 ---------------- */
 .emcee-cards-block {

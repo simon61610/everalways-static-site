@@ -623,7 +623,7 @@ li.active-now, li > a.active-now, .sub-nav li > a.active-now{
 
 .bar-outside {
     /* border: 1px solid red; */
-    height: 2px;
+    height: 4px;
     position: fixed;
     left: 0;
     top: 0;
@@ -633,7 +633,7 @@ li.active-now, li > a.active-now, .sub-nav li > a.active-now{
 }
 
 .bar-inside{
-    height: 2px;
+    height: 4px;
     background: var(--bdc-green);
 
     width: 0;

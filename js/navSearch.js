@@ -134,19 +134,18 @@ $(document).ready(function(){
         $('#lightboxContent').fadeOut()
         $('#lightboxMask').fadeOut()
     })
-    
 
 
-
-    
+    // ----------------- 進度條 -----------------
     $(window).on('scroll resize', function(){
         // resize 後重新抓一次
         let body_height = $('body').height()
         let window_height = $(window).height()
         let scroll_top = $(window).scrollTop()
+        // console.log(scroll_top)
 
         let scrollPercent = Math.round(scroll_top / (body_height - window_height) * 100)
-        // console.log(`scroll percent: ${scrollPercent}`)  // 0 ~ 101
+        // console.log(`scroll percent: ${scrollPercent}`) 
         if(scrollPercent > 100){
             scrollPercent = 100 + '%'
         }else{
