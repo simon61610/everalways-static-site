@@ -15,38 +15,13 @@
         font-size: 16px;
     }
 
-
     /* -------------------- Main -------------------- */
-    main .wrapper {
-        height: auto;
-    }
-
-    main > h1 {
-        font-size: 28px;
-        margin: 40px 0 28px 0;
-    }
-
-    .top-content {
-        position: static;
-        gap: 52px;
-    }
-
-    .top-content img {
-        width: 50%;
-        display: block;
-    }
     .top-content .text {
-        padding-top: 0;
         font-size: 16px;
     }
-
-    main .wrapper > div:last-child {
-        display: none;
+    .bottom-content {
+        display: none !important;
     }
-
-    
-
-
 
     /* -------------------- 婚禮企劃服務 -------------------- */
     .services {
@@ -113,6 +88,9 @@
 @media screen and (max-width: 431px) {
 
     /* -------------------- Main -------------------- */
+    main {
+        margin-top: 0;
+    }
     main > h1 {
         font-size: 18px;
         margin: 40px 16px 20px;
@@ -125,16 +103,17 @@
         gap: 20px;
     }
     .top-content .text {
-        font-size: 12px;
-        max-width: 70vw;
+        font-size: 14px;
+        max-width: 90vw;
     }
     .top-content img {
-        display: none;
+        /* display: none; */
+        max-width: 100%;
     }
 
     /* -------------------- 婚禮企劃服務 -------------------- */
     .services {
-        margin-top: 40px;
+        margin-top: 20px;
     }
     .services .filter {
         padding: 24px 16px;
@@ -149,7 +128,7 @@
         gap: 16px;
     }
     .services .filter div p {
-        font-size: 12px;
+        font-size: 14px;
         /* text-align: center; */
     }
     .services .filter a {
@@ -166,10 +145,18 @@
     .host-and-partner .wrapper {
         flex-direction: column;
         gap: 16px;
+        margin-bottom: 28px;
     }
     .introduce {
         /* text-align: center; */
         max-width: 100%;
+        gap: 16px;
+    }
+    .introduce h1 {
+        font-size: 24px;
+    }
+    .introduce p {
+        font-size: 14px;
     }
     .card-area {
         flex-direction: column;
@@ -187,37 +174,7 @@
         flex-shrink: 0;
         border-radius: 8px;
     }
-    /* .host-and-partner {
-        margin-top: 40px;
-        gap: 32px;
-    }
-    .host-and-partner .wrapper {
-        gap: 20px;
-    }
-    .host-and-partner .wrapper .introduce {
-        gap: 20px;
-    }
-    .host-and-partner .wrapper .introduce h1 {
-        font-size: 24px;
-    }
-    .host-and-partner .wrapper .introduce p {
-        font-size: 12px;
-    }
-    .host-and-partner .wrapper .card-area {
-        width: 100%;
-    }
-    .card {
-        padding: 12px;
-    }
-    .card > div .card-text h2 {
-        font-size: 16px;
-    }
-    .card > div .card-text p {
-        font-size: 12px;
-    }
-    .card > div .card-img {
-        border-radius: 10px;
-    } */
+    
     /* -------------------- Their Story -------------------- */
     .wedding-cases .wrapper {
         gap: 28px;

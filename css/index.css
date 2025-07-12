@@ -64,104 +64,78 @@
 
 
 /* -------------------- Main -------------------- */
-
+main {
+    max-width: 1200px;
+    margin: 80px auto 0;
+}
 /* --- 標題 --- */
-main {}
-
 main > h1 {
-    /* border: 1px solid red; */
     font-family: var(--eng-font);
     font-size: var(--H3-size);
     color: var(--ftc-black);
     text-align: center;
-    margin: 80px 0;;
+    margin-bottom: 80px;
 }
-
-main > h1 > span {
+main > h1 span {
     font-family: var(--chinese-font);
-}
 
+}
 /* --- pic + 文字敘述區域 --- */
 main .wrapper {}
 
 main .wrapper > div {
-    /* border: 1px solid red; */
     display: flex;
+    /* flex-wrap: wrap; */
 }
 
-/* --- 上面 --- */
+/* 上面 */
 .top-content {
-    display: flex;
     align-items: center;
     gap: 40px;
     position: relative;
     z-index: 2;
+    padding-right: 24px;
+    padding-left: 24px;
 }
 
 .top-content img{
-    width: 100%;
-    max-width: 760px;
+    display: block;
+    height: auto;
+    /* width: 100%; */
+    max-width: calc(760/1200*100vw);
 }
 
-.top-content .text{
+.top-content .text {
     font-size: var(--H5-size);
     color: var(--ftc-700);
     line-height: var(--line-height160);
-    max-width: 500px;
-    padding-right: 16px;
+    max-width: 400px;
 }
 
 /* --- 下面 --- */
 .bottom-content {
-    display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
     position: relative;
     z-index: 1;
     top: -60px;
+    padding-right: 140px;
+    padding-left: 24px;
 }
 
-.bottom-content .text{
+.bottom-content .text {
     font-size: var(--H5-size);
     color: var(--ftc-700);
     line-height: var(--line-height160);
 }
 
-.image-with-text {
-    /* border: 1px solid green; */
-    position: relative;
-    margin-right: 140px;
-}
-
-.image-with-text img{
+.image-with-text img {
     display: block;
+    height: auto;
     width: 100%;
-    max-width: 440px;
+    max-width: calc(440/1200*100vw);
 }
-
-.decorative-text {
-    font-size: var(--H5-size);
-    color: var(--bdc-pink);
-    display: flex;
-
-    position: absolute;
-    top: 0;
-    right: -40px;
-    writing-mode: vertical-rl;
-    transform: rotate(0deg);
-}
-
-.decorative-text::before {
-    content: "";
-    width: 1.5px;
-    height: 100px;
-    display: inline-block;
-    background-color: var(--bdc-pink);
-    align-self: center;
-    margin-bottom: 10px;
-}
-
 
 
 /* -------------------- 婚禮企劃服務 -------------------- */
