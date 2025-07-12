@@ -619,3 +619,24 @@ li.active-now, li > a.active-now, .sub-nav li > a.active-now{
     outline: 1px solid var(--ftc-300);
 }
 
+
+
+.bar-outside {
+    /* border: 1px solid red; */
+    height: 2px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+
+    background-color: hsl(60, 100%, 99%, .7);
+}
+
+.bar-inside{
+    height: 2px;
+    background: var(--bdc-green);
+
+    width: 0;
+    transition: width .2s linear;
+}
+

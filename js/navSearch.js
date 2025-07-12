@@ -135,4 +135,24 @@ $(document).ready(function(){
         $('#lightboxMask').fadeOut()
     })
     
+
+
+
+    
+    $(window).on('scroll resize', function(){
+        // resize 後重新抓一次
+        let body_height = $('body').height()
+        let window_height = $(window).height()
+        let scroll_top = $(window).scrollTop()
+
+        let scrollPercent = Math.round(scroll_top / (body_height - window_height) * 100)
+        // console.log(`scroll percent: ${scrollPercent}`)  // 0 ~ 101
+        if(scrollPercent > 100){
+            scrollPercent = 100 + '%'
+        }else{
+            scrollPercent = scrollPercent + '%'
+        }
+
+        $('.bar-inside').width(scrollPercent)
+    })
 })
