@@ -586,7 +586,8 @@ li.active-now, li > a.active-now, .sub-nav li > a.active-now{
     gap: 8px;
 }
 .chat-box-content img {
-    width: 28px;
+    width: 100%;
+    max-width: 28px;
     height: auto;
     display: inline-block;
     padding: 8px;
